@@ -1,0 +1,20 @@
+defscrollback 5000
+deflogin on
+
+screen -ln -a 0
+
+bind ! select 11
+bind @ select 12
+bind '#' select 13
+bind $ select 14
+bind % select 15
+bind '^' select 16
+bind & select 17
+bind * select 18
+bind ( select 19
+bind ) select 10
+
+# setup our status bar at the bottom
+hardstatus off
+hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
+  
