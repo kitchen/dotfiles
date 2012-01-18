@@ -12,7 +12,7 @@ cd $OLDPWD
 # main loop to catch them all!
 shopt -s dotglob
 for i in * ; do
-	if [[ $i == "." || $i = ".." || $i = "make-symlinks" || $i = ".ssh" || $i == ".git" || $i == ".gitmodule" ]]; then
+	if [[ $i == "." || $i = ".." || $i = "make-symlinks" || $i = ".ssh" || $i == ".git" || $i == ".gitmodules" ]]; then
 		continue
 	fi
 
@@ -23,7 +23,7 @@ for i in * ; do
 	else
 		if [[ -e ~/$i ]]; then
 			# something is there, what is it?
-			if [ -l ~/$i ]; then
+			if [[ -L "~/$i" ]]; then
 				# it's a symlink, but not to the right place!
 				echo "~/$i is a symlink, but it's not to the right place (should be ~/.dotfiles/$i"
 			else
