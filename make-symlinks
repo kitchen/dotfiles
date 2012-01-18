@@ -12,7 +12,8 @@ cd $OLDPWD
 # main loop to catch them all!
 shopt -s dotglob
 for i in * ; do
-	if [[ $i == "." || $i = ".." || $i = "make-symlinks" || $i = ".ssh" || $i == ".git" || $i == ".gitmodules" ]]; then
+	if [[ $i == "." || $i = ".." || $i = "make-symlinks" || $i = ".ssh" \
+		|| $i == ".git" || $i == ".gitmodules" || $i == "README" ]]; then
 		continue
 	fi
 

@@ -1,0 +1,5 @@
+kitchen's dotfiles. run the ./make-symlinks script to set up symlinks
+
+.ssh/* stuff is special cased since sshd doesn't like your ~/.ssh directory to be a symlink
+
+other than that, it's pretty simple
