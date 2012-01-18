@@ -1,0 +1,8 @@
+[user]
+	name = Jeremy Kitchen
+	email = kitchen@kitchen.io
+[color]
+	ui = auto
+[core]
+	autocrlf = input
+	safecrlf = true
