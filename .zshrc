@@ -22,41 +22,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-alias mysc="sudo /usr/bin/env PERLLIB=/home/jeremyk/devel/ndn/perl /home/jeremyk/devel/ndn/dh/bin/servicectl -f"
-alias myscb="sudo /usr/bin/env PERLLIB=/home/jeremyk/devel/ndn/perl /home/jeremyk/devel/ndn/dh/bin/servicectl"
-alias sc="sudo /dh/bin/servicectl -f"
-alias scb="sudo /dh/bin/servicectl"
-alias scf="sudo /dh/bin/servicectl --schedule --channel=gofast --fast"
-alias etcprof=". /etc/profile && . ~/.bashrc"
-alias dhsh="sudo /dh/bin/dhsh.pl"
-alias dhdist="sudo /dh/bin/dhdist.pl"
-#alias rssh='ssh -l root'
-alias m='dh-machine'
-alias user='dh-user'
-alias dhshc="sudo /dh/sbin/dhsh_concurrent.pl"
-
-export PATH="$PATH:/dh/bin:~/.bin"
-
-# Enable colors for ls, etc.  Prefer ~/.dir_colors #64489
-if type -p dircolors > /dev/null; then
-	dir_colors=dircolors
-else
-	if type -p gdircolors > /dev/null; then
-		dir_colors=gdircolors
-	fi
-fi
-
-if ! [ -z $dir_colors ]; then
-    if [[ -f ~/.dir_colors ]]; then
-            eval `$dir_colors -b ~/.dir_colors 2>/dev/null`
-    elif [[ -f /etc/DIR_COLORS ]]; then
-            eval `$dir_colors -b /etc/DIR_COLORS 2>/dev/null`
-    fi
-fi
-
-alias yakko="ssh yakko"
-alias inara="ssh inara"
-alias porky="ssh porky"
+export PATH="$PATH:~/.bin"
 
 export EDITOR=vim
 
