@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # pull in the submodules and set them up
 git submodule init
@@ -6,7 +6,7 @@ git submodule update
 
 # set up command-t
 cd .vim/bundle/command-t
-rake make
+rake make > /dev/null
 cd $OLDPWD
 
 # main loop to catch them all!
