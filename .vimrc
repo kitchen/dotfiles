@@ -135,3 +135,7 @@ hi User1 term=inverse,bold cterm=inverse,bold ctermfg=red
 set noswapfile
 
 set modelines=5
+
+" don't show .pyc files in command-t and the like, they are compiled python
+" files, similar to .o and such in C
+set wildignore+=*.pyc
