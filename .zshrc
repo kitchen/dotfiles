@@ -22,8 +22,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-export PATH="$PATH:~/.bin"
-
 export EDITOR=vim
 
 bindkey "\e[1~" beginning-of-line
