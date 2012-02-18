@@ -123,3 +123,6 @@ source $alias_file
 source ~/.mutt/subscriptions
 
 set forward_format="FW: %s"
+
+# don't prompt for action after urlview and such
+set wait_key = no
