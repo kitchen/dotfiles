@@ -47,3 +47,6 @@ bindkey "\e[H" beginning-of-line
 bindkey "\e[F" end-of-line
 
 export TERM=xterm-256color
+
+alias mssh='ssh -i ~/.ssh/mfback.pem'
+alias mscp='scp -i ~/.ssh/mfback.pem'
