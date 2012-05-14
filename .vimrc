@@ -71,7 +71,8 @@ let snips_author='Jeremy Kitchen'
 
 " colors!
 set background=dark
-color blackboard
+color solarized
+"color blackboard
 
 
 " make it so emails wrap at 72 chars
