@@ -14,6 +14,9 @@ export ZSH_THEME="jreese"
 # Uncomment following line if you want to disable colors in ls
 # export DISABLE_LS_COLORS="true"
 
+# uncomment to disable automatic window titles
+export DISABLE_AUTO_TITLE="true"
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
@@ -46,4 +49,7 @@ bindkey "\eOF" end-of-line
 bindkey "\e[H" beginning-of-line
 bindkey "\e[F" end-of-line
 
-export TERM=xterm-256color
+[ -z "$TMUX" ] && export TERM=xterm-256color
+
+alias mssh='ssh -l ec2-user -i ~/.ssh/mfback.pem'
+alias mscp='scp -i ~/.ssh/mfback.pem'
