@@ -13,3 +13,6 @@
 [submodule ".vim/bundle/taskpaper.vim"]
 	path = .vim/bundle/taskpaper.vim
 	url = https://github.com/davidoc/taskpaper.vim.git
+[submodule ".vim/bundle/vim-colors-solarized"]
+	path = .vim/bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
