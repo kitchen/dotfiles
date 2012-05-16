@@ -112,6 +112,10 @@ nnoremap <leader>d VGd
 
 " open a new window and switch to it
 nnoremap <leader>w <C-w>v<C-w>l
+" make a second window beside this one and switch to it
+nnoremap <leader><bar> <C-w>v<C-w>l
+" make a second window under this one and switch to it
+nnoremap <leader>- <C-w>n<C-w>l
 
 " navigate windows like normal
 nnoremap <C-h> <C-w>h
@@ -140,3 +144,7 @@ set modelines=5
 " don't show .pyc files in command-t and the like, they are compiled python
 " files, similar to .o and such in C
 set wildignore+=*.pyc,*.beam
+
+" config stuff for taskpaper
+"" iso 8601 date format
+let g:task_paper_date_format = "%Y-%m-%dT%H:%M:%S%z"
