@@ -148,3 +148,4 @@ set wildignore+=*.pyc,*.beam
 " config stuff for taskpaper
 "" iso 8601 date format
 let g:task_paper_date_format = "%Y-%m-%dT%H:%M:%S%z"
+let g:task_paper_search_hide_done = 1
