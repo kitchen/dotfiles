@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec sudo puppet apply --manifestdir=$HOME/puppet-manifests -v --templatedir=$HOME/puppet-templates --modulepath=$HOME/puppet-modules $HOME/puppet-manifests/site.pp
