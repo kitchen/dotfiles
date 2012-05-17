@@ -53,3 +53,5 @@ bindkey "\e[F" end-of-line
 
 alias mssh='ssh -l ec2-user -i ~/.ssh/mfback.pem'
 alias mscp='scp -i ~/.ssh/mfback.pem'
+
+umask 0022
