@@ -1,3 +1,0 @@
-#!/bin/sh
-
-exec puppet agent --no-splay --no-daemonize --onetime -v @$

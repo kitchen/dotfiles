@@ -149,3 +149,8 @@ set wildignore+=*.pyc,*.beam
 "" iso 8601 date format
 let g:task_paper_date_format = "%Y-%m-%dT%H:%M:%S%z"
 let g:task_paper_search_hide_done = 1
+
+" svn stuffs
+"" quick svn blame snippet
+vmap gl :<C-U>!svn blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
+
