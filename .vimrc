@@ -46,6 +46,8 @@ set foldmethod=syntax
 " don't fold anything by default
 set foldlevel=100
 
+let g:Powerline_symbols = 'fancy'
+
 " pathogen
 call pathogen#infect()
 filetype on
@@ -70,6 +72,7 @@ set listchars=tab:▸\ ,eol:¬
 let snips_author='Jeremy Kitchen'
 
 " colors!
+let g:solarized_visibility="normal"
 set background=dark
 color solarized
 "color blackboard
@@ -132,9 +135,9 @@ set cursorline
 " put git info and funstuffs into status line
 " don't forget to escape spaces! it doesn't seem to like having double quotes
 " around the whole thing
-set statusline=%<%f%=\ %{fugitive#statusline()}\ [%1*%M%*%n%R%H]\ %-19(%3l,%02c%03V%)%O'%02b'
+"set statusline=%<%f%=\ %{fugitive#statusline()}\ [%1*%M%*%n%R%H]\ %-19(%3l,%02c%03V%)%O'%02b'
 " change the color of the modified flag so it's on a red background
-hi User1 term=inverse,bold cterm=inverse,bold ctermfg=red
+"hi User1 term=inverse,bold cterm=inverse,bold ctermfg=red
 
 " swap files are annoying, and I'm sure dropbox agrees!
 set noswapfile
