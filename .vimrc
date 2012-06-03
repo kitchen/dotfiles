@@ -1,5 +1,6 @@
 " shut off the old vi compatibility garboo!
 set nocompatible
+set encoding=utf-8
 
 " show the current file position and percentage in the status bar
 set ruler
@@ -46,7 +47,11 @@ set foldmethod=syntax
 " don't fold anything by default
 set foldlevel=100
 
+" Powerline setup
 let g:Powerline_symbols = 'fancy'
+"let g:Powerline_colorscheme = 'skwp'
+let g:Powerline_stl_path_style = "short"
+
 
 " pathogen
 call pathogen#infect()
