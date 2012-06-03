@@ -21,4 +21,5 @@ if [ -e "/bin/zsh" ]; then
 fi
 
 # since centos5 doesn't know wtf screen-256color is ...
-export TERM=screen
+# anddddddd since I added the .terminfo stuff, this shouldn't be needed any longer
+#export TERM=screen
