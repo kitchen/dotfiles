@@ -19,3 +19,6 @@ if [ -e "/bin/zsh" ]; then
 		exec /bin/zsh
 	fi
 fi
+
+# since centos5 doesn't know wtf screen-256color is ...
+export TERM=screen
