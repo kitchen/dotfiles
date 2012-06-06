@@ -30,6 +30,9 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 
+" don't fucking unindent my comments, stupid vim
+:inoremap # X#
+
 " line numbers!
 set number
 
