@@ -4,11 +4,6 @@
 git submodule init
 git submodule update
 
-# set up command-t
-cd .vim/bundle/command-t
-rake make > /dev/null
-cd $OLDPWD
-
 # main loop to catch them all!
 shopt -s dotglob
 for i in * ; do
