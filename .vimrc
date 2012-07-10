@@ -46,9 +46,11 @@ set si
 set scrolloff=5
 
 " fold based off the syntax highlighting
-set foldmethod=syntax
-" don't fold anything by default
-set foldlevel=100
+set foldmethod=indent
+set foldlevel=1
+set foldnestmax=10
+set nofoldenable
+
 
 " Powerline setup
 let g:Powerline_symbols = 'fancy'
