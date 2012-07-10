@@ -4,5 +4,3 @@
 [color]
 	ui = auto
 [core]
-	autocrlf = input
-	safecrlf = true
