@@ -31,3 +31,6 @@
 [submodule ".mutt/shared/solarized"]
 	path = .mutt/shared/solarized
 	url = https://github.com/altercation/mutt-colors-solarized.git
+[submodule ".vim/bundle/vim-git"]
+	path = .vim/bundle/vim-git
+	url = https://github.com/tpope/vim-git.git
