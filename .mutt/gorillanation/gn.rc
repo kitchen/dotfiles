@@ -1,0 +1,26 @@
+# GN account info
+set imap_user="jeremy.kitchen"
+set imap_pass="***REMOVED***"
+
+# real name info
+set realname="Jeremy Kitchen"
+set from="jeremy.kitchen@gorillanation.com"
+set envelope_from=yes
+
+# folder stuffs
+set folder=imaps://webmail.gorillanation.com/
+set spoolfile="=INBOX"
+set record="=Sent Items"
+set postponed="=Drafts"
+
+# aliases
+set alias_file = ~/.mutt/gorillanation/aliases
+source $alias_file
+
+# mailing lists
+source ~/.mutt/gorillanation/subscriptions
+
+# shared
+source ~/.mutt/shared/shared.rc
+
+# vim: ft=muttrc
