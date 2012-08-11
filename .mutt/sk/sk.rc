@@ -20,7 +20,7 @@ set postponed="=[Gmail]/Drafts"
 set alias_file = ~/.mutt/shared/aliases
 source $alias_file
 
-# mailing lists
+# mailing lists and their relevant send hooks
 source ~/.mutt/sk/subscriptions
 
 # shared
