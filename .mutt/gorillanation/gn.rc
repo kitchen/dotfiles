@@ -1,6 +1,8 @@
 # GN account info
 set imap_user="jeremy.kitchen"
 set imap_pass="***REMOVED***"
+set smtp_url=smtp://jeremy.kitchen@webmail.gorillanation.com/
+set smtp_pass=$imap_pass
 
 # real name info
 set realname="Jeremy Kitchen"
@@ -22,5 +24,8 @@ source ~/.mutt/gorillanation/subscriptions
 
 # shared
 source ~/.mutt/shared/shared.rc
+
+set pgp_sign_as=0x6300CC3D
+set crypt_autosign
 
 # vim: ft=muttrc

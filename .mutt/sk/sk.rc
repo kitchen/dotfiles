@@ -1,0 +1,32 @@
+# SK account info
+set imap_user="kitchen@scriptkitchen.com
+set imap_pass="***REMOVED***"
+set smtp_url=smtps://kitchen@scriptkitchen.com@smtp.gmail.com/
+set smtp_pass=$imap_pass
+
+# real name info
+set realname="Jeremy Kitchen"
+set from="kitchen@kitchen.io"
+alternates "kitchen@scriptkitchen.com"
+set envelope_from=yes
+
+# folder stuffs
+set folder=imaps://imap.gmail.com/
+set spoolfile="=INBOX"
+set record="=[Gmail]/Sent Mail"
+set postponed="=[Gmail]/Drafts"
+
+# aliases
+set alias_file = ~/.mutt/shared/aliases
+source $alias_file
+
+# mailing lists
+source ~/.mutt/sk/subscriptions
+
+# shared
+source ~/.mutt/shared/shared.rc
+
+set pgp_sign_as=0x6300CC3D
+set crypt_autosign
+
+# vim: ft=muttrc
