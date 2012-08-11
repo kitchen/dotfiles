@@ -16,10 +16,6 @@ set spoolfile="=INBOX"
 set record="=[Gmail]/Sent Mail"
 set postponed="=[Gmail]/Drafts"
 
-# aliases
-set alias_file = ~/.mutt/shared/aliases
-source $alias_file
-
 # mailing lists and their relevant send hooks
 source ~/.mutt/sk/subscriptions
 

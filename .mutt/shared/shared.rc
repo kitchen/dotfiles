@@ -2,8 +2,10 @@ set copy=yes
 
 set forward_quote
 bind index "\Ca" 'imap-fetch-mail'
+bind index <Tab> 'next-unread'
 set include
 set indent_str="> "
+set forward_format="FW: %s"
 
 source ~/.mutt/shared/solarized/mutt-colors-solarized-dark-16.muttrc
 
@@ -52,5 +54,9 @@ set pgp_list_secring_command="gpg --no-verbose --batch --quiet --with-colons --l
 set pgp_good_sign="^\\[GNUPG:\\] GOODSIG"
 
 set use_ipv6 = yes
+
+# aliases
+set alias_file = ~/.mutt/shared/aliases
+source $alias_file
 
 # vim: ft=muttrc:
