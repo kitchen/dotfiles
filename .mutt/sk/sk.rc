@@ -24,9 +24,11 @@ source $alias_file
 source ~/.mutt/sk/subscriptions
 
 # shared
-source ~/.mutt/shared/shared.rc
 
 set pgp_sign_as=0x6300CC3D
 set crypt_autosign
 
+set signature = ~/.mutt/sk/signature
+
+source ~/.mutt/shared/shared.rc
 # vim: ft=muttrc
