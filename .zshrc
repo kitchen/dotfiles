@@ -68,6 +68,6 @@ function r() {
 }
 
 
-alias mutt="gnmutt"
+alias mutt="skmutt"
 alias gnmutt="mutt -F ~/.mutt/gorillanation/gn.rc"
-alias skmutt="mutt -F ~/.mutt/scriptkitchen/sk.rc"
+alias skmutt="mutt -F ~/.mutt/sk/sk.rc"
