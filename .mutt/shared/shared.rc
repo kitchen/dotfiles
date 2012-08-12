@@ -21,6 +21,11 @@ set pager_index_lines=10
 set pager_context=3
 set pager_stop=yes
 
+# show some of the previous screen of messages when going from one page to the next
+# this also has the fun side effect of 'centering' the current message in the index
+# when looking at the preview pane
+set menu_context = 10
+
 
 set edit_headers = yes
 set hdrs = yes
