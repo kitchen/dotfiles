@@ -4,8 +4,8 @@ set imap_pass="***REMOVED***"
 
 # FIXME: get GN to allow me to submit messages via smtp. even internally. wtf, eh
 # orr... something. I mean really, I need to send emails, and I don't care, I'm using mutt. ***REMOVED***. fuck outlook
-set smtp_url=smtps://mailout@inara.kitchen.io/
-set smtp_pass="***REMOVED***"
+set smtp_url=smtp://jeremy.kitchen@smtp.gorillanation.com/"
+set smtp_pass=$imap_pass
 
 # real name info
 set realname="Jeremy Kitchen"

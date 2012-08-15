@@ -3,6 +3,10 @@ set copy=yes
 set forward_quote
 bind index "\Ca" 'imap-fetch-mail'
 bind index <Tab> 'next-unread'
+
+# I keep accidentally hitting q and not meaning it
+bind index q noop
+bind index "\Cx" 'quit'
 set include
 set indent_str="> "
 set forward_format="FW: %s"
@@ -21,11 +25,9 @@ set pager_index_lines=10
 set pager_context=3
 set pager_stop=yes
 
-# anddd.... because I don't like how mutt does its page 'jumps' we'll just force
-# the cursor to the center of the screen and have it stick there. playing with this
-# for a few minutes and I almost like this better than anything else. I might even do
-# something like this with vim
-set menu_context = 1000
+# andddd... because I did some more research, this is how I would PREFER it work :)
+set menu_context = 5
+set menu_scroll = yes
 
 set edit_headers = yes
 set hdrs = yes
