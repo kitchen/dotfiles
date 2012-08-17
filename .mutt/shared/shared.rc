@@ -5,8 +5,7 @@ bind index "\Ca" 'imap-fetch-mail'
 bind index <Tab> 'next-unread'
 
 # I keep accidentally hitting q and not meaning it
-bind index q noop
-bind index "\Cx" 'quit'
+set quit=ask-yes
 set include
 set indent_str="> "
 set forward_format="FW: %s"
