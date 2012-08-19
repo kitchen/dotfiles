@@ -89,6 +89,7 @@ color solarized
 " make it so emails wrap at 72 chars
 au FileType mail set tw=72
 au FileType ruby,puppet,php setlocal ts=8 softtabstop=4 shiftwidth=4 expandtab
+au BufRead,BufNewFile *.md set filetype=markdown
 
 
 " wrap lines
