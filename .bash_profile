@@ -23,3 +23,5 @@ fi
 # since centos5 doesn't know wtf screen-256color is ...
 # anddddddd since I added the .terminfo stuff, this shouldn't be needed any longer
 #export TERM=screen
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
