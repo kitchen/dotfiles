@@ -1,3 +1,7 @@
+# don't do things like ~rvm_rvmrc_cwd etc
+# https://rvm.io/integration/zsh/
+unsetopt auto_name_dirs
+
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -19,7 +23,7 @@ export DISABLE_AUTO_TITLE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git svn)
+plugins=(git svn rvm)
 
 source $ZSH/oh-my-zsh.sh
 
