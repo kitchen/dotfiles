@@ -5,6 +5,9 @@ bind index "\Ca" 'imap-fetch-mail'
 bind index <Tab> 'next-unread'
 bind pager <Tab> 'next-unread'
 
+macro index c "<change-folder>?<toggle-mailboxes>" "open a different folder"
+macro pager c "<change-folder>?<toggle-mailboxes>" "open a different folder"
+
 # I keep accidentally hitting q and not meaning it
 set quit=ask-yes
 set include

@@ -17,6 +17,8 @@ set folder=imaps://webmail.gorillanation.com/
 set spoolfile="=INBOX"
 set record="=Sent Items"
 set postponed="=Drafts"
+unmailboxes *
+mailboxes =INBOX
 
 # mailing lists
 source ~/.mutt/gorillanation/subscriptions
