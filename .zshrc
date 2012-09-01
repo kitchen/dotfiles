@@ -77,3 +77,8 @@ alias gnmutt="mutt -F ~/.mutt/gorillanation/gn.rc"
 alias skmutt="mutt -F ~/.mutt/sk/sk.rc"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+if which ack-grep > /dev/null;  then
+	alias ack="ack-grep"
+fi
+
