@@ -55,6 +55,8 @@ let g:Powerline_symbols = 'fancy'
 "let g:Powerline_colorscheme = 'skwp'
 let g:Powerline_stl_path_style = "short"
 
+nnoremap <F5> :GundoToggle<CR>
+
 
 " pathogen
 call pathogen#infect()
