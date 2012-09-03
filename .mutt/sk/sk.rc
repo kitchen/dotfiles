@@ -20,6 +20,8 @@ unmailboxes *
 mailboxes =INBOX
 mailboxes =Archive
 
+set query_command = "~/.mutt/icloud/icloud-addressbook-query.py"
+
 # mailing lists and their relevant send hooks
 source ~/.mutt/sk/subscriptions
 
