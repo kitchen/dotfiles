@@ -1,0 +1,14 @@
+snippet gem
+	package { "${1:gemname}":
+		provider => "gem",
+		ensure => "${2:version}",
+		${3}
+	}
+	${4}
+
+snippet package
+	package { "${1:packagename}":
+		ensure => "${2:installed}",
+		${3}
+	}
+	${4}
