@@ -78,7 +78,7 @@ alias skmutt="mutt -F ~/.mutt/sk/sk.rc"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-if which ack-grep 2&>1 > /dev/null;  then
+if which ack-grep > /dev/null 2>&1;  then
 	alias ack="ack-grep"
 fi
 
