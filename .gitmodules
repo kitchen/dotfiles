@@ -40,3 +40,6 @@
 [submodule ".mutt/icloud"]
 	path = .mutt/icloud
 	url = git://github.com/kitchen/icloud-addressbook-query.git
+[submodule ".vim/bundle/nerdtree.vim"]
+	path = .vim/bundle/nerdtree.vim
+	url = git://github.com/scrooloose/nerdtree.git
