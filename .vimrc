@@ -141,6 +141,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" NERDTree is too hard to type
+nnoremap <leader>n :NERDTreeToggle<cr>
+
 " show cursorline in current window
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline

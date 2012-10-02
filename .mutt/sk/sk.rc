@@ -16,11 +16,16 @@ set spoolfile="=INBOX"
 set record="=[Gmail]/Sent Mail"
 set postponed="=[Gmail]/Drafts"
 
+# show only my specified mailboxes by default
 unmailboxes *
 mailboxes =INBOX
 mailboxes =Archive
 
+# pretty slick way to query my address book
 set query_command = "~/.mutt/icloud/icloud-addressbook-query.py"
+
+# I saw this on the bitfolk mailing list
+my_hdr X-URL: http://kitchen.io/
 
 # mailing lists and their relevant send hooks
 source ~/.mutt/sk/subscriptions
