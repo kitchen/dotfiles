@@ -30,6 +30,9 @@ my_hdr X-URL: http://kitchen.io/
 # mailing lists and their relevant send hooks
 source ~/.mutt/sk/subscriptions
 
+set header_cache=~/.mutt/sk/headercache
+set message_cachedir=~/.mutt/sk/messagecache
+
 # shared
 source ~/.mutt/shared/shared.rc
 source ~/.mutt/shared/gpg-6300CC3D.rc

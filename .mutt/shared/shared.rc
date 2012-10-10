@@ -16,9 +16,6 @@ set forward_format="FW: %s"
 
 source ~/.mutt/shared/solarized/mutt-colors-solarized-dark-16.muttrc
 
-set header_cache=~/.mutt/headercache
-set message_cachedir=~/.mutt/messagecache
-
 set include=yes
 
 ## show message index while reading messages

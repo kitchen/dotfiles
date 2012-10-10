@@ -23,6 +23,9 @@ mailboxes =INBOX
 # mailing lists
 source ~/.mutt/gorillanation/subscriptions
 
+set header_cache=~/.mutt/gorillanation/headercache
+set message_cachedir=~/.mutt/gorillanation/messagecache
+
 # shared
 source ~/.mutt/shared/shared.rc
 source ~/.mutt/shared/gpg-6300CC3D.rc
