@@ -38,7 +38,7 @@ bind pager	"G" bottom
 bind index	"G" last-entry
 bind browser	"G" last-entry
 
-set index_format="%4C %Z %{%b %d %R} %-18.18F (%4c) %M %s"
+set index_format="%4C %Z %[%b %d %R] %-18.18F (%4c) %M %s"
 
 # fun!
 alternative_order text/plain text text/html
