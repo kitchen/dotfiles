@@ -38,7 +38,7 @@ bind pager	"G" bottom
 bind index	"G" last-entry
 bind browser	"G" last-entry
 
-set index_format="%4C %Z %{%b %d %R} %-18.18F (%4c) %M %s"
+set index_format="%4C %Z %[%b %d %R] %-18.18F (%4c) %M %s"
 
 # fun!
 alternative_order text/plain text text/html
@@ -59,6 +59,7 @@ set pgp_list_pubring_command="gpg --no-verbose --batch --quiet --with-colons --l
 set pgp_list_secring_command="gpg --no-verbose --batch --quiet --with-colons --list-secret-keys %r" 
 set pgp_good_sign="^\\[GNUPG:\\] GOODSIG"
 set pgp_use_gpg_agent = yes
+set pgp_auto_decode = yes
 
 set use_ipv6 = yes
 
