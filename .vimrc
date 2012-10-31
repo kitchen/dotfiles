@@ -94,7 +94,6 @@ color solarized
 au FileType mail set tw=72 spell spelllang=en_us
 au FileType ruby,puppet,php setlocal ts=8 softtabstop=4 shiftwidth=4 expandtab
 au FileType markdown set spell spelllang=en_us
-au BufRead,BufNewFile *.md set filetype=markdown
 
 
 " wrap lines
@@ -165,6 +164,8 @@ set modelines=5
 " don't show .pyc files in command-t and the like, they are compiled python
 " files, similar to .o and such in C
 set wildignore+=*.pyc,*.beam
+" and NERDTree completely ignores this setting. silly.
+let NERDTreeIgnore = ['\.pyc$','\.beam$']
 
 " config stuff for taskpaper
 "" iso 8601 date format
