@@ -1,6 +1,6 @@
 # GN account info
 set imap_user="jeremy.kitchen"
-set imap_pass="***REMOVED***"
+set imap_pass="`gpg -q --batch -d ~/.mutt/gorillanation/gn.imap.password.gpg`"
 
 # FIXME: get GN to allow me to submit messages via smtp. even internally. wtf, eh
 # orr... something. I mean really, I need to send emails, and I don't care, I'm using mutt. ***REMOVED***. fuck outlook
