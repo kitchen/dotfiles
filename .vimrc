@@ -78,6 +78,8 @@ set ls=2
 " show tabs and newlines all fancy-like
 set list
 set listchars=tab:▸\ ,eol:¬
+" Shortcut to rapidly toggle `set list`
+nmap <leader>l :set list! number!<CR>
 
 
 " snippets stuff
