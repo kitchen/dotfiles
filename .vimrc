@@ -149,6 +149,9 @@ nnoremap <leader>n :NERDTreeToggle<cr>
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 set cursorline
+autocmd WinEnter * setlocal cursorcolumn
+autocmd WinLeave * setlocal nocursorcolumn
+set cursorcolumn
 
 
 " put git info and funstuffs into status line
