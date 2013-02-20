@@ -78,6 +78,8 @@ set ls=2
 " show tabs and newlines all fancy-like
 set list
 set listchars=tab:▸\ ,eol:¬
+" Shortcut to rapidly toggle `set list`
+nmap <leader>l :set list! number!<CR>
 
 
 " snippets stuff
@@ -147,6 +149,9 @@ nnoremap <leader>n :NERDTreeToggle<cr>
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 set cursorline
+autocmd WinEnter * setlocal cursorcolumn
+autocmd WinLeave * setlocal nocursorcolumn
+set cursorcolumn
 
 
 " put git info and funstuffs into status line

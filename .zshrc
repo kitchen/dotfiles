@@ -55,8 +55,7 @@ bindkey "\e[F" end-of-line
 
 #[ -z "$TMUX" ] && export TERM=xterm-256color
 
-alias mssh='ssh -l ec2-user -i ~/.ssh/mfback.pem'
-alias mscp='scp -i ~/.ssh/mfback.pem'
+alias pcp=pscp
 
 umask 0022
 

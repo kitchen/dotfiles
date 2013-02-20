@@ -9,7 +9,7 @@ set smtp_pass=$imap_pass
 
 # real name info
 set realname="Jeremy Kitchen"
-set from="jeremy.kitchen@gorillanation.com"
+set from="jeremy.kitchen@evolvemediallc.com"
 set envelope_from=yes
 
 # folder stuffs
