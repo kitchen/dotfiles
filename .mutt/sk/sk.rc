@@ -2,7 +2,10 @@
 set imap_user="kitchen@scriptkitchen.com
 set imap_pass="`gpg -q --batch -d ~/.mutt/sk/sk.imap.password.gpg`"
 set smtp_url=smtps://kitchen@pluto.kitchen.io
-set smtp_pass="`gpg -q --batch -d ~/.mutt/sk/sk.smtp.password.gpg`"
+set smtp_pass="`gpg -q --batch -d ~/.mutt/sk/sk.smtp.password.pluto.gpg`"
+# backup smtp server in case pluto goes kaput
+#set smtp_url=smtps://kitchen@nandi.kitchen.io
+#set smtp_pass="`gpg -q --batch -d ~/.mutt/sk/sk.smtp.password.nandi.gpg`"
 
 # real name info
 set realname="Jeremy Kitchen"
