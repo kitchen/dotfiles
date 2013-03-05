@@ -70,4 +70,9 @@ set use_ipv6 = yes
 set alias_file = ~/.mutt/shared/aliases
 source $alias_file
 
+# header display
+ignore *
+unignore from date subject to cc
+unignore mail-followup-to
+
 # vim: ft=muttrc:
