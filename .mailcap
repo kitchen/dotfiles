@@ -1,5 +1,8 @@
 text/html;	lynx %s; nametemplate=%s.html
 text/html;	lynx -dump %s; nametemplate=%s.html; copiousoutput
+image/*;	ristretto %s; test=/usr/bin/test -e /usr/bin/ristretto
 image/*;	~/.mutt/shared/osx_view_attachment.sh %s -
+document/pdf;	evince %s; test=/usr/bin/test -e /usr/bin/evince
 document/pdf;	~/.mutt/shared/osx_view_attachment.sh %s -
+application/pdf;	evince %s; test=/usr/bin/test -e /usr/bin/evince
 application/pdf;	~/.mutt/shared/osx_view_attachment.sh %s -
