@@ -73,6 +73,7 @@ function r() {
 
 alias mutt="skmutt"
 alias skmutt="mutt -F ~/.mutt/sk/sk.rc"
+alias nbmutt="mutt -F ~/.mutt/nb/nb.rc"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
