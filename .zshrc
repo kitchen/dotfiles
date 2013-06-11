@@ -79,3 +79,5 @@ if which ack-grep > /dev/null 2>&1;  then
 	alias ack="ack-grep"
 fi
 
+export NBUILD="$HOME/Development/nbuild"
+export PATH=/usr/local/bin:$PATH
