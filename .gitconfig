@@ -9,3 +9,5 @@
 	l2 = log --graph --all --abbrev-commit --pretty=oneline --decorate
 	commit = commit -S
 [core]
+[push]
+	default = current
