@@ -70,6 +70,9 @@ function r() {
   fi
 }
 
+alias cap='env SSL_CERT_FILE=/usr/local/share/ca-bundle.crt cap'
+
+
 
 alias mutt="skmutt"
 alias skmutt="mutt -F ~/.mutt/sk/sk.rc"
