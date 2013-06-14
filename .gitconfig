@@ -11,3 +11,5 @@
 [core]
 [push]
 	default = current
+[include]
+	path = ~/.gitconfig.local
