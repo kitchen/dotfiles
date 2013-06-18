@@ -84,3 +84,6 @@ fi
 
 export NBUILD="$HOME/Development/nbuild"
 export PATH=/usr/local/bin:$PATH
+export DEBFULLNAME="Jeremy Kitchen"
+export DEBEMAIL="jeremy@nationbuilder.com"
+
