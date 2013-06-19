@@ -21,7 +21,8 @@ set postponed="=[Gmail]/Drafts"
 # show only my specified mailboxes by default
 unmailboxes *
 mailboxes =INBOX
-mailboxes =Archive
+mailboxes "=[Gmail]/All Mail"
+mailboxes notifications
 
 # pretty slick way to query my address book
 set query_command = "~/.mutt/icloud/icloud-addressbook-query.py"
