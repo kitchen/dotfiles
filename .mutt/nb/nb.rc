@@ -22,7 +22,7 @@ set postponed="=[Gmail]/Drafts"
 unmailboxes *
 mailboxes =INBOX
 mailboxes "=[Gmail]/All Mail"
-mailboxes notifications
+mailboxes =notifications
 
 # pretty slick way to query my address book
 set query_command = "~/.mutt/icloud/icloud-addressbook-query.py"
