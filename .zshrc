@@ -28,6 +28,8 @@ plugins=(git svn bundler rvm)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+# turn off the annoying !12345 stuff over on the right. sorry but it fucks with my copy/paste and I don't use it
+unset RPROMPT
 
 export EDITOR=vim
 
