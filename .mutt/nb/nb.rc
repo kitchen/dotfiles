@@ -41,3 +41,6 @@ set message_cachedir=~/.mutt/nb/messagecache
 source ~/.mutt/shared/shared.rc
 source ~/.mutt/shared/gpg-E572903A.rc
 # vim: ft=muttrc
+
+# I'm constantly CCing people
+set askcc=yes
