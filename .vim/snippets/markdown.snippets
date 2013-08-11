@@ -28,3 +28,7 @@ snippet ---
 	`repeat('-', strlen(getline(line(".") - 1)))`
 
 	${1}
+
+snippet movie
+	* ${1} -- [[IMDb](${2})] [[wikipedia](${3})]
+	${4}
