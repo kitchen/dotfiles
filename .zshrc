@@ -22,9 +22,11 @@ export DISABLE_AUTO_UPDATE="true"
 # uncomment to disable automatic window titles
 export DISABLE_AUTO_TITLE="true"
 
+export ZSH_CUSTOM=$HOME/.zsh/oh-my-zsh-custom/
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git svn bundler rvm)
+plugins=(git svn bundler rvm autojump zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -90,3 +92,9 @@ export PATH=/usr/local/bin:$PATH
 export DEBFULLNAME="Jeremy Kitchen"
 export DEBEMAIL="jeremy@nationbuilder.com"
 
+# remove these in favor of using autojump
+#hash -d PROFILES=~/Development/puppet/modules-3dna/profile
+#hash -d ROLES=~/Development/puppet/modules-3dna/role
+#hash -d HIERA=~/Development/puppet/hiera
+#hash -d NBEC=~/Development/nbec
+#hash -d NBUILD=~/Development/nbuild
