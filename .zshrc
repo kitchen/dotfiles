@@ -58,10 +58,6 @@ bindkey "\eOF" end-of-line
 bindkey "\e[H" beginning-of-line
 bindkey "\e[F" end-of-line
 
-#[ -z "$TMUX" ] && export TERM=xterm-256color
-
-alias pcp=pscp
-
 umask 0022
 
 # used to refresh ssh connection for tmux
@@ -76,8 +72,6 @@ function r() {
 }
 
 alias cap='env SSL_CERT_FILE=/usr/local/share/ca-bundle.crt cap'
-
-
 
 alias mutt="skmutt"
 alias skmutt="mutt -F ~/.mutt/sk/sk.rc"
