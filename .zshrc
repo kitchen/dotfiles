@@ -45,7 +45,6 @@ function r() {
     NEW_SSH_AUTH_SOCK=`tmux showenv|grep '^SSH_AUTH_SOCK'|cut -d = -f 2`
     if [[ -n $NEW_SSH_AUTH_SOCK ]] && [[ -S $NEW_SSH_AUTH_SOCK ]]; then
       export SSH_AUTH_SOCK=$NEW_SSH_AUTH_SOCK
-      echo "export SSH_AUTH_SOCK=$NEW_SSH_AUTH_SOCK"
     fi
   fi
 }
