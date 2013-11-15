@@ -64,9 +64,4 @@ export PATH=/usr/local/bin:$PATH
 export DEBFULLNAME="Jeremy Kitchen"
 export DEBEMAIL="jeremy@nationbuilder.com"
 
-# remove these in favor of using autojump
-#hash -d PROFILES=~/Development/puppet/modules-3dna/profile
-#hash -d ROLES=~/Development/puppet/modules-3dna/role
-#hash -d HIERA=~/Development/puppet/hiera
-#hash -d NBEC=~/Development/nbec
-#hash -d NBUILD=~/Development/nbuild
+alias wal-e='sudo -u postgres /usr/bin/envdir /etc/wal-e.d/env /usr/local/bin/wal-e'
