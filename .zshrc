@@ -67,7 +67,7 @@ export DEBEMAIL="jeremy@nationbuilder.com"
 alias wal-e='sudo -u postgres /usr/bin/envdir /etc/wal-e.d/env /usr/local/bin/wal-e'
 
 if [[ `expr $$ % 20` == "0" ]]; then
-  if which doge; then
+  if which doge 2>&1 > /dev/null ; then
     doge
   fi
 fi
