@@ -53,16 +53,12 @@ alias cap='env SSL_CERT_FILE=/usr/local/share/ca-bundle.crt cap'
 
 alias mutt="skmutt"
 alias skmutt="mutt -F ~/.mutt/sk/sk.rc"
-alias nbmutt="mutt -F ~/.mutt/nb/nb.rc"
 
 if which ack-grep > /dev/null 2>&1;  then
 	alias ack="ack-grep"
 fi
 
-export NBUILD="$HOME/Development/nbuild"
 export PATH=/usr/local/bin:$PATH
-export DEBFULLNAME="Jeremy Kitchen"
-export DEBEMAIL="jeremy@nationbuilder.com"
 
 alias wal-e='sudo -u postgres /usr/bin/envdir /etc/wal-e.d/env /usr/local/bin/wal-e'
 
