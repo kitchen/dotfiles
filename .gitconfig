@@ -1,7 +1,7 @@
 [user]
 	name = Jeremy Kitchen
-	email = kitchen@kitchen.io
-	signingkey = 0x6300cc3d
+	email = jeremy@stripe.com
+	#signingkey = 0x6300cc3d
 [color]
 	ui = auto
 [alias]
@@ -15,3 +15,7 @@
 	path = ~/.gitconfig.local
 [init]
 	templatedir = ~/.git-init-template
+
+[filter "ssh_space_commander_config"]
+	clean = ~/bin/filter-ssh-config.awk
+	blur = cat
