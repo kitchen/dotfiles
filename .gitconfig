@@ -1,7 +1,6 @@
 [user]
 	name = Jeremy Kitchen
-	email = jeremy@stripe.com
-	#signingkey = 0x6300cc3d
+	email = kitchen@kitchen.io
 [color]
 	ui = auto
 [alias]
