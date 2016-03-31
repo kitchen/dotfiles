@@ -67,3 +67,24 @@ if [[ `expr $$ % 20` == "0" ]]; then
     doge
   fi
 fi
+
+typeset -A projects
+projects[sc]="$HOME/stripe/space-commander"
+projects[puppet]="$HOME/stripe/puppet-config"
+projects[payserver]="$HOME/stripe/pay-server"
+
+project() {
+	dir=""
+	if [ ! -z ${projects[$1]} ]; then
+		dir=${projects[$1]}
+	else
+		dir="$HOME/stripe/${1}"
+	fi
+	if cd $dir; then
+		/usr/local/bin/atom .
+	else
+		echo "failed to change into project directory"
+	fi
+	unset dir
+}
+
