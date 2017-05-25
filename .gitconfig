@@ -18,3 +18,5 @@
 [filter "ssh_space_commander_config"]
 	clean = ~/bin/filter-ssh-config.awk
 	blur = cat
+[url "git@github.com:"]
+	insteadOf = https://github.com/

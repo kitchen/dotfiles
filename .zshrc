@@ -58,7 +58,7 @@ if which ack-grep > /dev/null 2>&1;  then
 	alias ack="ack-grep"
 fi
 
-export PATH=/usr/local/bin:$PATH
+export PATH=$HOME/stripe/pay-server/scripts/bin:/usr/local/bin:$PATH
 
 alias wal-e='sudo -u postgres /usr/bin/envdir /etc/wal-e.d/env /usr/local/bin/wal-e'
 
@@ -72,6 +72,8 @@ typeset -A projects
 projects[sc]="$HOME/stripe/space-commander"
 projects[puppet]="$HOME/stripe/puppet-config"
 projects[payserver]="$HOME/stripe/pay-server"
+projects[mongodash]="$GOPATH/src/github.com/stripe/mongodash"
+projects[mongosloth-jira]="$GOPATH/src/github.com/stripe-internal/mongosloth-jira"
 
 project() {
 	dir=""
@@ -88,3 +90,19 @@ project() {
 	unset dir
 }
 
+
+areweup () {
+	(
+		set -ex;
+		api-checker -r "$@";
+		api-checker -rad "$@";
+		api-checker -rV "$@"
+	)
+}
+
+export GOPATH=~/golang
+export PATH=$GOPATH/bin:$PATH
+
+if which sc-ssh-wrapper 2>&1 >/dev/null; then
+	alias ssh='sc-ssh-wrapper'
+fi
