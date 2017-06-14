@@ -87,7 +87,7 @@ let snips_author='Jeremy Kitchen'
 
 " colors!
 let g:solarized_visibility="normal"
-set background=dark
+set background=light
 color solarized
 "color blackboard
 
