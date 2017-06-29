@@ -1,6 +1,7 @@
 [user]
 	name = Jeremy Kitchen
 	email = kitchen@kitchen.io
+	signingkey = 0xB6F0E4F4
 [color]
 	ui = auto
 [alias]

@@ -90,7 +90,6 @@ project() {
 	unset dir
 }
 
-
 areweup () {
 	(
 		set -ex;
@@ -106,3 +105,8 @@ export PATH=$GOPATH/bin:$PATH
 if which sc-ssh-wrapper 2>&1 >/dev/null; then
 	alias ssh='sc-ssh-wrapper'
 fi
+
+export GOPATH=$HOME/Development/golang/
+export PATH=$PATH:$GOPATH/bin
+
+export PATH=$PATH:$HOME/.composer/vendor/bin
