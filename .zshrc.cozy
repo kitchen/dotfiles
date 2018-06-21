@@ -1,6 +1,10 @@
 
-if [[ -r /usr/local/opt/nvm/nvm.sh ]]; then
-	export NVM_DIR="$HOME/.nvm"
-	. "/usr/local/opt/nvm/nvm.sh"
+if [[ -e ~/cozy ]]; then
+	if [[ -r /usr/local/opt/nvm/nvm.sh ]]; then
+		export NVM_DIR="$HOME/.nvm"
+		. "/usr/local/opt/nvm/nvm.sh"
+	fi
+	alias aws="aws --profile cozy"
+
+	export PATH=$PATH:~/cozy/chef-repo/bin
 fi
-alias aws="aws --profile cozy"
