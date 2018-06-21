@@ -1,6 +1,6 @@
 [user]
 	name = Jeremy Kitchen
-	email = kitchen@kitchen.io
+	email = jeremy@cozy.co
 	signingkey = 0xB6F0E4F4
 [color]
 	ui = auto
@@ -15,8 +15,5 @@
 	path = ~/.gitconfig.local
 [init]
 	templatedir = ~/.git-init-template
-
-[filter "ssh_space_commander_config"]
-	clean = ~/bin/filter-ssh-config.awk
-	blur = cat
-
+[core]
+	pager = 

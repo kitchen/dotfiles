@@ -26,7 +26,7 @@ export ZSH_CUSTOM=$HOME/.zsh/oh-my-zsh-custom/
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git svn bundler rvm autojump zsh-syntax-highlighting rbenv)
+plugins=(git svn bundler rvm autojump zsh-syntax-highlighting nvm knife)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,3 +110,10 @@ export GOPATH=$HOME/Development/golang/
 export PATH=$PATH:$GOPATH/bin
 
 export PATH=$PATH:$HOME/.composer/vendor/bin
+
+
+
+
+# for now, until I figure out a better "local things" setup
+. ~/.zshrc.cozy
+
