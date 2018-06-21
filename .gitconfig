@@ -1,7 +1,6 @@
 [user]
 	name = Jeremy Kitchen
-	email = jeremy@cozy.co
-	signingkey = 0xB6F0E4F4
+	email = kitchen@kitchen.io
 [color]
 	ui = auto
 [alias]
@@ -17,3 +16,6 @@
 	templatedir = ~/.git-init-template
 [core]
 	pager = 
+
+[includeIf "gitdir:~/cozy/**"]
+	path = ~/.gitconfig.cozy
