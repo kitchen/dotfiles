@@ -50,3 +50,7 @@ cat ~/.dotfiles/.ssh/config.d/common > ~/.ssh/config
 if [ "$(uname)" == "Darwin" ]; then
 	cat ~/.dotfiles/.ssh/config.d/Darwin >> ~/.ssh/config
 fi
+
+if [[ -d ~/cozy ]]; then
+	cat ~/.dotfiles/.ssh/config.d/cozy >> ~/.ssh/config
+fi
