@@ -19,3 +19,5 @@
 
 [includeIf "gitdir:~/cozy/**"]
 	path = ~/.gitconfig.cozy
+[color "diff"]
+	whitespace = red reverse
