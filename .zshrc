@@ -38,9 +38,6 @@ export EDITOR=vim
 
 umask 0022
 
-alias mutt="skmutt"
-alias skmutt="mutt -F ~/.mutt/sk/sk.rc"
-
 if which ack-grep > /dev/null 2>&1;  then
 	alias ack="ack-grep"
 fi
