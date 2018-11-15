@@ -10,9 +10,6 @@
 [submodule ".vim/bundle/taskpaper.vim"]
 	path = .vim/bundle/taskpaper.vim
 	url = git://github.com/davidoc/taskpaper.vim.git
-[submodule ".vim/bundle/vim-colors-solarized"]
-	path = .vim/bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized
 [submodule ".vim/bundle/vim-puppet"]
 	path = .vim/bundle/vim-puppet
 	url = git://github.com/rodjek/vim-puppet.git
