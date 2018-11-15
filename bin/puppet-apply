@@ -1,3 +1,0 @@
-#!/bin/sh
-
-exec sudo puppet apply --manifestdir=/home/jkitchen/puppet-manifests -v --templatedir=/home/jkitchen/puppet-templates --modulepath=/home/jkitchen/puppet-modules $@ /home/jkitchen/puppet-manifests/site.pp
