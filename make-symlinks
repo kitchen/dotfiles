@@ -36,11 +36,9 @@ done
 shopt -u dotglob
 
 # .ssh files need to be done spiffylike, and we'll just smash what's already there, if anything
-cd .ssh
-./mkauth.sh
 test -d ~/.ssh || mkdir -m 0700 ~/.ssh
+curl -s https://github.com/kitchen.keys > ~/.dotfiles/.ssh/authorized_keys
 ln -sf ~/.dotfiles/.ssh/authorized_keys ~/.ssh/authorized_keys || echo "unable to create .ssh/authorized_keys symlink, eek!"
-cd $OLDPWD
 
 # because mac-specific things and because Match and Include are only in later ssh versions
 # hopefully this is just a temporary hack and I'll be removing it after all of the remote hosts I use
