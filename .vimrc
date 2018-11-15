@@ -1,6 +1,15 @@
-" shut off the old vi compatibility garboo!
 set nocompatible
+filetype off
 set encoding=utf-8
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin('VundleVim/Vundle.vim')
+Plugin('altercation/vim-colors-solarized')
+
+call vundle#end()
+filetype plugin indent on
 
 " show the current file position and percentage in the status bar
 set ruler
@@ -51,26 +60,10 @@ set foldlevel=1
 set foldnestmax=10
 set nofoldenable
 
-
-" Powerline setup
-let g:Powerline_symbols = 'fancy'
-"let g:Powerline_colorscheme = 'skwp'
-let g:Powerline_stl_path_style = "short"
-
-nnoremap <F5> :GundoToggle<CR>
-
-
-" pathogen
-call pathogen#infect()
-filetype on
-filetype indent on
-filetype plugin on
-
 " enable syntax highlighting
 syntax enable
 " go all the way back for redrawing. in case we're ass deep in nested ifs
 syntax sync fromstart
-
 
 " last status, set up a status line
 set ls=2
@@ -80,10 +73,6 @@ set list
 set listchars=tab:▸\ ,eol:¬
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list! number!<CR>
-
-
-" snippets stuff
-let snips_author='Jeremy Kitchen'
 
 " colors!
 let g:solarized_visibility="normal"
