@@ -7,6 +7,8 @@ call vundle#begin()
 
 Plugin('VundleVim/Vundle.vim')
 Plugin('altercation/vim-colors-solarized')
+"Plugin('junegunn/fzf.vim')
+Plugin('itchyny/lightline.vim')
 
 call vundle#end()
 filetype plugin indent on
@@ -66,7 +68,7 @@ syntax enable
 syntax sync fromstart
 
 " last status, set up a status line
-set ls=2
+set laststatus=2
 
 " show tabs and newlines all fancy-like
 set list
@@ -134,6 +136,8 @@ set cursorline
 autocmd WinEnter * setlocal cursorcolumn
 autocmd WinLeave * setlocal nocursorcolumn
 set cursorcolumn
+
+
 
 
 " put git info and funstuffs into status line
