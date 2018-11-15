@@ -7,23 +7,24 @@ call vundle#begin()
 
 Plugin('VundleVim/Vundle.vim')
 Plugin('altercation/vim-colors-solarized')
-"Plugin('junegunn/fzf.vim')
+set rtp+=/usr/local/opt/fzf
+Plugin('junegunn/fzf.vim')
 Plugin('itchyny/lightline.vim')
 
 call vundle#end()
 filetype plugin indent on
 
-" show the current file position and percentage in the status bar
-set ruler
-
 " does some fun tab completion stuffs when in command mode
 set wildmenu
 
-" 
 set backspace=indent,eol,start
 
 " change the leader to a comma
 let mapleader=","
+
+let g:lightline = {
+	\ 'colorscheme': 'solarized'
+	\ }
 
 
 " --- search stuff
@@ -137,9 +138,6 @@ autocmd WinEnter * setlocal cursorcolumn
 autocmd WinLeave * setlocal nocursorcolumn
 set cursorcolumn
 
-
-
-
 " put git info and funstuffs into status line
 " don't forget to escape spaces! it doesn't seem to like having double quotes
 " around the whole thing
@@ -155,15 +153,4 @@ set modelines=5
 " don't show .pyc files in command-t and the like, they are compiled python
 " files, similar to .o and such in C
 set wildignore+=*.pyc,*.beam
-" and NERDTree completely ignores this setting. silly.
-let NERDTreeIgnore = ['\.pyc$','\.beam$']
-
-" config stuff for taskpaper
-"" iso 8601 date format
-let g:task_paper_date_format = "%Y-%m-%dT%H:%M:%S%z"
-let g:task_paper_search_hide_done = 1
-
-" svn stuffs
-"" quick svn blame snippet
-vmap gl :<C-U>!svn blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
 
