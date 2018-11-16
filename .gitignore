@@ -5,4 +5,4 @@
 .bundle/
 *.sublime-project
 *.sublime-workspace
-
+.vim/bundle/
