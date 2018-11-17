@@ -39,15 +39,8 @@ shopt -u dotglob
 test -d ~/.ssh || mkdir -m 0700 ~/.ssh
 curl -s https://github.com/kitchen.keys > ~/.dotfiles/.ssh/authorized_keys
 ln -sf ~/.dotfiles/.ssh/authorized_keys ~/.ssh/authorized_keys || echo "unable to create .ssh/authorized_keys symlink, eek!"
-
-# because mac-specific things and because Match and Include are only in later ssh versions
-# hopefully this is just a temporary hack and I'll be removing it after all of the remote hosts I use
-# get upgraded to later versions of software (dreamhost, I'm looking at you!)
-rm ~/.ssh/config
-cat ~/.dotfiles/.ssh/config.d/common > ~/.ssh/config
-if [ "$(uname)" == "Darwin" ]; then
-	cat ~/.dotfiles/.ssh/config.d/Darwin >> ~/.ssh/config
-fi
+ln -sf ~/.dotfiles/.ssh/config.d/ ~/.ssh/ || echo "unable to create .ssh/config.d symlink, eek!"
+ln -sf ~/.dotfiles/.ssh/config ~/.ssh/config || echo "unable to create .ssh/config symlink, eek!"
 
 if [[ -d ~/cozy ]]; then
 	cat ~/.dotfiles/.ssh/config.d/cozy >> ~/.ssh/config
