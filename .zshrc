@@ -18,3 +18,8 @@ antigen apply
 if [[ -r ~/.zshrc.cozy ]]; then
 	. ~/.zshrc.cozy
 fi
+
+# silversearcher and fzf stuff
+alias ag='ag --hidden'
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
