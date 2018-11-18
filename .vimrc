@@ -80,10 +80,8 @@ set listchars=tab:▸\ ,eol:¬
 nmap <leader>l :set list! number!<CR>
 
 " colors!
-let g:solarized_visibility="normal"
-set background=light
+let g:solarized_visibility="low"
 color solarized
-"color blackboard
 
 " wrap lines
 set wrap
@@ -113,15 +111,10 @@ vnoremap <F1> <ESC>
 nnoremap ; :
 
 
-" usually used in emails, delete the rest of the file:
-nnoremap <leader>d VGd
-
-" open a new window and switch to it
-nnoremap <leader>w <C-w>v<C-w>l
 " make a second window beside this one and switch to it
-nnoremap <leader><bar> <C-w>v<C-w>l
+nnoremap <leader><bar> :vnew<enter>
 " make a second window under this one and switch to it
-nnoremap <leader>- <C-w>n<C-w>l
+nnoremap <leader>- :new<enter>
 
 " navigate windows like normal
 nnoremap <C-h> <C-w>h
@@ -129,30 +122,13 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" NERDTree is too hard to type
-nnoremap <leader>n :NERDTreeToggle<cr>
-
 " show cursorline in current window
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 set cursorline
-autocmd WinEnter * setlocal cursorcolumn
-autocmd WinLeave * setlocal nocursorcolumn
-set cursorcolumn
-
-" put git info and funstuffs into status line
-" don't forget to escape spaces! it doesn't seem to like having double quotes
-" around the whole thing
-"set statusline=%<%f%=\ %{fugitive#statusline()}\ [%1*%M%*%n%R%H]\ %-19(%3l,%02c%03V%)%O'%02b'
-" change the color of the modified flag so it's on a red background
-"hi User1 term=inverse,bold cterm=inverse,bold ctermfg=red
 
 " swap files are annoying, and I'm sure dropbox agrees!
 set noswapfile
 
 set modelines=5
-
-" don't show .pyc files in command-t and the like, they are compiled python
-" files, similar to .o and such in C
-set wildignore+=*.pyc,*.beam
 
