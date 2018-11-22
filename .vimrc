@@ -88,7 +88,7 @@ set wrap
 " I like these options better
 set formatoptions=qrn1
 
-" be a dick to myself and disable the arrow keys. gods be damned!
+" unmap arrow keys
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
@@ -132,3 +132,4 @@ set noswapfile
 
 set modelines=5
 
+nnoremap <leader>t :Files<enter>
