@@ -15,7 +15,7 @@ fi
 antigen apply
 
 # for now, until I figure out a better "local things" setup
-if [[ -r ~/.zshrc.cozy ]]; then
+if [[ -d ~/cozy ]]; then
 	. ~/.zshrc.cozy
 fi
 
