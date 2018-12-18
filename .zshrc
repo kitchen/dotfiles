@@ -5,6 +5,8 @@ antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle unixorn/rvm-plugin
 antigen bundle fzf
+antigen bundle mercurial
+antigen bundle github
 
 antigen theme afowler
 
