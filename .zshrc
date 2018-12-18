@@ -10,8 +10,9 @@ antigen bundle github
 
 antigen theme afowler
 
-if [[ $CURRENT_OS == 'OS X' ]]; then
+if [[ $TERM_PROGRAM == 'iTerm.app' ]]; then
 	antigen bundle osx
+	. ~/.zshrc.osx
 fi
 
 antigen apply
