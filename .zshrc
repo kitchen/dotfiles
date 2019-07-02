@@ -7,6 +7,10 @@ antigen bundle unixorn/rvm-plugin
 antigen bundle fzf
 antigen bundle mercurial
 antigen bundle github
+antigen bundle thefuck
+antigen bundle berkshelf/berkshelf-zsh-plugin
+
+eval "$(direnv hook zsh)"
 
 antigen theme afowler
 
@@ -17,6 +21,8 @@ fi
 
 antigen apply
 
+export EDITOR=vim
+
 # for now, until I figure out a better "local things" setup
 if [[ -d ~/cozy ]]; then
 	. ~/.zshrc.cozy
@@ -26,3 +32,5 @@ fi
 alias ag='ag --hidden'
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
+export PATH=$PATH:$HOME/go/bin
+
