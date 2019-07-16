@@ -14,9 +14,6 @@
 	path = ~/.gitconfig.local
 [init]
 	templatedir = ~/.git-init-template
-[core]
-	pager = 
-
 [includeIf "gitdir:~/cozy/**"]
 	path = ~/.gitconfig.cozy
 [color "diff"]
