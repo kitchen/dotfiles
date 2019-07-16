@@ -12,9 +12,6 @@
 	default = current
 [include]
 	path = ~/.gitconfig.local
-[init]
-	templatedir = ~/.git-init-template
-[includeIf "gitdir:~/cozy/**"]
-	path = ~/.gitconfig.cozy
+
 [color "diff"]
 	whitespace = red reverse
