@@ -28,3 +28,5 @@ export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 export PATH=$PATH:$HOME/go/bin
 
 export EDITOR=vim
+
+alias pohara='mosh -p 60000:60250 pohara'
