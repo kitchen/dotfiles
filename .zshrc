@@ -8,6 +8,7 @@ antigen bundle fzf
 antigen bundle mercurial
 antigen bundle github
 antigen bundle thefuck
+antigen bundle gradle
 
 eval "$(direnv hook zsh)"
 antigen bundle tmuxinator
@@ -39,3 +40,10 @@ if [[ -d $HOME/squarespace ]]; then
 fi
 
 alias pohara='mosh -p 60000:60250 pohara'
+
+# virtualenvwrapper
+if [[ -f /usr/local/bin/virtualenvwrapper.sh ]]; then
+	export WORKON_HOME=~/python/
+	source /usr/local/bin/virtualenvwrapper_lazy.sh
+fi
+
