@@ -16,11 +16,11 @@ antigen theme afowler
 
 if [[ $TERM_PROGRAM == 'iTerm.app' ]]; then
 	antigen bundle osx
-	. ~/.zsh/osx.rc
+	. ~/.config/zsh/osx.rc
 fi
 
 if [[ -d $HOME/squarespace ]]; then
-	. ~/.zsh/squarespace-antigen.rc
+	. ~/.config/zsh/squarespace-antigen.rc
 fi
 
 antigen apply
@@ -35,7 +35,7 @@ export EDITOR=vim
 
 
 if [[ -d $HOME/squarespace ]]; then
-	. ~/.zsh/squarespace.rc
+	. ~/.config/zsh/squarespace.rc
 fi
 
 alias pohara='mosh -p 60000:60250 pohara'
