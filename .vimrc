@@ -12,7 +12,6 @@ Plugin('junegunn/fzf.vim')
 Plugin('itchyny/lightline.vim')
 Plugin 'editorconfig/editorconfig-vim'
 
-
 call vundle#end()
 filetype plugin indent on
 

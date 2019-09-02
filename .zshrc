@@ -25,7 +25,7 @@ antigen apply
 alias ag='ag --hidden'
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
-export PATH=$PATH:$HOME/go/bin
+export PATH=$PATH:$HOME/go/bin:$HOME/bin
 
 export EDITOR=vim
 
