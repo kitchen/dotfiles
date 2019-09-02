@@ -1,13 +1,10 @@
 default: all
 
-all: pubs authorized_keys
+all: authorized_keys
 
-# so, this bombs out if pubkeys/*.pub doesn't return any files
-# also if one of the files gets deleted. just re-run make
-# and it never runs if a file is added. just re-run make
-# Oh well.
-authorized_keys: pubs pubkeys/*.pub mkauth.sh
-	./mkauth.sh
+authorized_keys: authorized_keys.new
+	mv authorized_keys.new authorized_keys
 
-pubs:
-	svn update
+authorized_keys.new:
+	curl -s -o authorized_keys.new https://github.com/kitchen.keys
+

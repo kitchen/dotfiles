@@ -1,5 +1,5 @@
-kitchen's dotfiles. run the ./make-symlinks script to set up symlinks
+kitchen's dotfiles
 
-.ssh/* stuff is special cased since sshd doesn't like your ~/.ssh directory to be a symlink
+run `make` to install
 
-other than that, it's pretty simple
+this doesn't do any checking to make sure things are correctly symlinked so if there are files already there it won't do the needful. I'd like to fix that. Perhaps instead of using `make` I'll use something like ansible, though I don't much care for adding that as a dependency
