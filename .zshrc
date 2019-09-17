@@ -13,7 +13,11 @@ antigen bundle gradle
 eval "$(direnv hook zsh)"
 antigen bundle tmuxinator
 
-antigen theme afowler
+# spaceship prompt settings
+export SPACESHIP_PROMPT_SEPARATE_LINE=false
+export SPACESHIP_PROMPT_ORDER=(time user dir host git hg package node ruby elm elixir xcode swift php rust haskell julia docker aws venv conda pyenv dotnet ember kubecontext terraform exec_time line_sep battery vi_mode jobs exit_code char)
+
+antigen theme denysdovhan/spaceship-prompt
 
 if [[ $TERM_PROGRAM == 'iTerm.app' ]]; then
 	antigen bundle osx
