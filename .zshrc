@@ -35,6 +35,9 @@ export PATH=$PATH:$HOME/go/bin:$HOME/bin
 export EDITOR=vim
 
 
+export SPACESHIP_KUBECONTEXT_COLOR_GROUPS=(
+	green 'minikube'
+)
 if [[ -d $HOME/squarespace ]]; then
 	. ~/.config/zsh/squarespace.rc
 fi
