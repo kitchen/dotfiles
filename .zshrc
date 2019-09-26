@@ -48,14 +48,19 @@ if [[ -f /usr/local/bin/virtualenvwrapper.sh ]]; then
 fi
 
 # spaceship prompt settings
-export SPACESHIP_PROMPT_SEPARATE_LINE=false
-export SPACESHIP_PROMPT_ORDER=(time user host dir git hg package node ruby elm elixir xcode swift php rust haskell julia docker aws venv conda pyenv dotnet ember kubecontext terraform exec_time line_sep battery vi_mode jobs exit_code char)
+#export SPACESHIP_PROMPT_SEPARATE_LINE=false
+export SPACESHIP_PROMPT_ORDER=(time user host dir git ruby aws venv pyenv kubecontext terraform exec_time exit_code line_sep battery vi_mode jobs char)
 export SPACESHIP_DIR_PREFIX=":: "
-export SPACESHIP_DIR_SUFFIX=" :: "
 export SPACESHIP_DIR_COLOR=yellow
-export SPACESHIP_GIT_PREFIX="git "
-export SPACESHIP_GIT_PREFIX="git: "
+export SPACESHIP_GIT_PREFIX="‹"
+export SPACESHIP_GIT_SUFFIX="› "
 export SPACESHIP_GIT_BRANCH_PREFIX=""
+export SPACESHIP_GIT_BRANCH_SUFFIX=""
+export SPACESHIP_GIT_BRANCH_COLOR=blue
+export SPACESHIP_GIT_STATUS_PREFIX=""
+export SPACESHIP_GIT_STATUS_SUFFIX=""
+export SPACESHIP_KUBECONTEXT_PREFIX=" :: "
 export SPACESHIP_KUBECONTEXT_SYMBOL=""
 export SPACESHIP_KUBECONTEXT_PREFIX="kube: "
 export SPACESHIP_DIR_TRUNC_REPO=false
+export SPACESHIP_EXIT_CODE_SHOW=true
