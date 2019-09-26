@@ -13,10 +13,6 @@ antigen bundle gradle
 eval "$(direnv hook zsh)"
 antigen bundle tmuxinator
 
-# spaceship prompt settings
-export SPACESHIP_PROMPT_SEPARATE_LINE=false
-export SPACESHIP_PROMPT_ORDER=(time user dir host git hg package node ruby elm elixir xcode swift php rust haskell julia docker aws venv conda pyenv dotnet ember kubecontext terraform exec_time line_sep battery vi_mode jobs exit_code char)
-
 antigen theme denysdovhan/spaceship-prompt
 
 if [[ $TERM_PROGRAM == 'iTerm.app' ]]; then
@@ -51,3 +47,15 @@ if [[ -f /usr/local/bin/virtualenvwrapper.sh ]]; then
 	source /usr/local/bin/virtualenvwrapper_lazy.sh
 fi
 
+# spaceship prompt settings
+export SPACESHIP_PROMPT_SEPARATE_LINE=false
+export SPACESHIP_PROMPT_ORDER=(time user host dir git hg package node ruby elm elixir xcode swift php rust haskell julia docker aws venv conda pyenv dotnet ember kubecontext terraform exec_time line_sep battery vi_mode jobs exit_code char)
+export SPACESHIP_DIR_PREFIX=":: "
+export SPACESHIP_DIR_SUFFIX=" :: "
+export SPACESHIP_DIR_COLOR=yellow
+export SPACESHIP_GIT_PREFIX="git "
+export SPACESHIP_GIT_PREFIX="git: "
+export SPACESHIP_GIT_BRANCH_PREFIX=""
+export SPACESHIP_KUBECONTEXT_SYMBOL=""
+export SPACESHIP_KUBECONTEXT_PREFIX="kube: "
+export SPACESHIP_DIR_TRUNC_REPO=false
