@@ -46,13 +46,14 @@ alias pohara='mosh -p 60000:60250 pohara'
 
 # virtualenvwrapper
 if [[ -f /usr/local/bin/virtualenvwrapper.sh ]]; then
+	export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
 	export WORKON_HOME=~/python/
 	source /usr/local/bin/virtualenvwrapper_lazy.sh
 fi
 
 # spaceship prompt settings
 #export SPACESHIP_PROMPT_SEPARATE_LINE=false
-export SPACESHIP_PROMPT_ORDER=(time user host dir git ruby aws venv pyenv kubecontext terraform exec_time exit_code line_sep battery vi_mode jobs char)
+export SPACESHIP_PROMPT_ORDER=(time user host dir git ruby aws venv kubecontext terraform exec_time exit_code line_sep battery vi_mode jobs char)
 export SPACESHIP_DIR_PREFIX=":: "
 export SPACESHIP_DIR_COLOR=yellow
 export SPACESHIP_GIT_PREFIX="‹"
@@ -70,3 +71,4 @@ export SPACESHIP_EXIT_CODE_SHOW=true
 export SPACESHIP_CHAR_SUFFIX=" "
 export SPACESHIP_TIME_COLOR=red
 export SPACESHIP_TIME_SHOW=true
+export SPACESHIP_VENV_PREFIX="venv: "
