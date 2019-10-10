@@ -8,6 +8,7 @@ antigen bundle fzf
 antigen bundle mercurial
 antigen bundle github
 antigen bundle thefuck
+antigen bundle gcloud
 antigen bundle gradle
 
 eval "$(direnv hook zsh)"
