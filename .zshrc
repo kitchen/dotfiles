@@ -77,3 +77,5 @@ export SPACESHIP_HOST_PREFIX="@"
 export SPACESHIP_HOST_COLOR_SSH=yellow
 export SPACESHIP_USER_SUFFIX=""
 export SPACESHIP_USER_PREFIX=""
+
+source ~/.config/zsh/ssh-ca.rc
