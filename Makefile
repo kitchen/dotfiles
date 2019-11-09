@@ -13,13 +13,5 @@ $(homed_dirs):
 $(homed_symlinks):
 	ln -s $(subst ${HOME},${CURDIR},$@) $@
 
-
-${HOME}/.ssh/authorized_keys: .ssh/authorized_keys
-
-.ssh/authorized_keys:
-	$(MAKE) -C .ssh all
-
-
-
 .DEFAULT_GOAL :=
 all: $(homed_dirs) $(homed_symlinks)
