@@ -1,5 +1,5 @@
 kitchen's dotfiles
 
-run `make` to install
+I'm now using [`stow`](https://www.gnu.org/software/stow/) to manage my dotfiles. Or at least trying to. This is an experiment. So far I really only have 3 things I have my dotfiles on anymore and they all support `stow`, so that's good.
 
-this doesn't do any checking to make sure things are correctly symlinked so if there are files already there it won't do the needful. I'd like to fix that. Perhaps instead of using `make` I'll use something like ansible, though I don't much care for adding that as a dependency
+run `bash install.sh` and delete things as it whines about them. It's not a smooth transition process, but that's fine. I don't care.

@@ -22,7 +22,7 @@ if [[ $TERM_PROGRAM == 'iTerm.app' ]]; then
 fi
 
 if [[ -d $HOME/squarespace ]]; then
-	. ~/.config/zsh/squarespace-antigen.rc
+	. ~/.config/squarespace/squarespace-antigen.zshrc
 fi
 
 antigen apply
@@ -40,7 +40,7 @@ export SPACESHIP_KUBECONTEXT_COLOR_GROUPS=(
 	green 'minikube'
 )
 if [[ -d $HOME/squarespace ]]; then
-	. ~/.config/zsh/squarespace.rc
+	. ~/.config/squarespace/squarespace.zshrc
 fi
 
 alias pohara='mosh -p 60000:60250 pohara'

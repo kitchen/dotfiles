@@ -14,10 +14,10 @@
 	path = ~/.config/git/local
 
 [includeIf "gitdir:~/go/src/code.squarespace.net/**"]
-	path = ~/.config/git/squarespace
+	path = ~/.config/squarespace/git.config
 
 [includeIf "gitdir:~/squarespace/**"]
-	path = ~/.config/git/squarespace
+	path = ~/.config/squarespace/git.config
 
 [color "diff"]
 	whitespace = red reverse
