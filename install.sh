@@ -9,8 +9,6 @@ stows=(
 	zsh
 )
 
-trap "exit" INT
-
 if ! which stow > /dev/null; then
 	echo "stow required, please install"
 	echo "`brew install stow` or `sudo apt install stow`"
