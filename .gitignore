@@ -1,8 +1,0 @@
-.ssh/config~
-.idea/
-.DS_Store
-*.orig
-.bundle/
-*.sublime-project
-*.sublime-workspace
-.vim/bundle/
