@@ -1,14 +1,6 @@
 function signmebro() {
-#	echo -n 'checking for vault token ... '
-#	if [[ ! -f ~/.vault-token || -z "${VAULT_TOKEN}" ]]; then
-#		echo 'not found!'
-#		echo -n 'checking for vault ... '
-#		if whence vault > /dev/null ; then
-#			echo 'found!'
-#	else
-#		echo 'found!'
-#	fi
-
-	cert=$(VAULT_ADDR=http://localhost:8200/ vault write -field signed_key sshca/sign/kitchen public_key=@${HOME}/.ssh/id_ed25519.pub)
-	echo $cert > ~/.ssh/id_ed25519-cert.pub
+	pubkeyfile=${1:-${HOME}/.ssh/id_ed25519.pub}
+	certfile=$(dirname ${pubkeyfile})/$(basename ${pubkeyfile} .pub)-cert.pub
+	cert=$(VAULT_ADDR="http://localhost:8200/" vault write -field signed_key sshca/sign/kitchen public_key=@${pubkeyfile})
+	echo $cert > $certfile
 }
