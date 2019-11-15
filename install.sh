@@ -4,6 +4,7 @@ stows=(
 	hg
 	squarespace
 	ssh
+	thefuck
 	tmux
 	vim
 	zsh
