@@ -10,6 +10,7 @@ antigen bundle github
 antigen bundle thefuck
 antigen bundle gcloud
 antigen bundle gradle
+antigen bundle rust
 
 eval "$(direnv hook zsh)"
 antigen bundle tmuxinator
@@ -54,7 +55,7 @@ fi
 
 # spaceship prompt settings
 #export SPACESHIP_PROMPT_SEPARATE_LINE=false
-export SPACESHIP_PROMPT_ORDER=(time user host dir git ruby aws venv kubecontext terraform exec_time exit_code line_sep battery vi_mode jobs char)
+export SPACESHIP_PROMPT_ORDER=(time user host dir git ruby aws venv kubecontext terraform rust exec_time exit_code line_sep battery vi_mode jobs char)
 export SPACESHIP_DIR_PREFIX=":: "
 export SPACESHIP_DIR_COLOR=yellow
 export SPACESHIP_GIT_PREFIX="‹"
@@ -77,5 +78,6 @@ export SPACESHIP_HOST_PREFIX="@"
 export SPACESHIP_HOST_COLOR_SSH=yellow
 export SPACESHIP_USER_SUFFIX=""
 export SPACESHIP_USER_PREFIX=""
+export SPACESHIP_RUST_PREFIX=""
 
 source ~/.config/zsh/ssh-ca.rc
