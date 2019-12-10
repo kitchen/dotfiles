@@ -16,4 +16,4 @@ if ! which stow > /dev/null; then
 	exit 2
 fi
 
-stow ${stows[@]}
+stow -R -v ${stows[@]}
