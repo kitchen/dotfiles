@@ -28,6 +28,6 @@ SPACESHIP_KUBECONTEXT_COLOR_GROUPS+=(
 	red '^gke_.*-prod-'
 )
 
-export GOPROXY=artifactory.squarespace.net/
+export GOPROXY=artifactory.squarespace.net/api/go/go
 export GOPRIVATE=*.squarespace.net
 export GONOPROXY=none
