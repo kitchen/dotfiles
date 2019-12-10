@@ -81,3 +81,5 @@ export SPACESHIP_USER_PREFIX=""
 export SPACESHIP_RUST_PREFIX=""
 
 source ~/.config/zsh/ssh-ca.rc
+
+alias gcp=gcloud
