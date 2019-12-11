@@ -1,5 +1,6 @@
 stows=(
 	bash
+	emacs
 	git
 	hg
 	squarespace
