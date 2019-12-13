@@ -32,7 +32,7 @@ values."
    dotspacemacs-configuration-layers
    '(
      (go :variables
-        go-tab-width nil
+        ;; go-tab-width nil ;; this breaks go for some reason
         go-format-before-save t
         gofmt-command "goimports"
         go-use-testify-for-testing t)
