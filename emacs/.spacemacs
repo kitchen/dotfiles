@@ -31,7 +31,11 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
-     go
+     (go :variables
+        go-tab-width nil
+        go-format-before-save t
+        gofmt-command "goimports"
+        go-use-testify-for-testing t)
      terraform
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
