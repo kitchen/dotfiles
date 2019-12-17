@@ -24,7 +24,6 @@ values."
    ;; If non-nil then Spacemacs will ask for confirmation before installing
    ;; a layer lazily. (default t)
    dotspacemacs-ask-for-lazy-installation t
-   ;; If non-nil layers with lazy install support are lazy installed.
    ;; List of additional paths where to look for configuration layers.
    ;; Paths must have a trailing slash (i.e. `~/.mycontribs/')
    dotspacemacs-configuration-layer-path '()
@@ -50,6 +49,7 @@ values."
      git
      github
      markdown
+     multiple-cursors
      org
      ;; (shell :variables
      ;;        shell-default-height 30
@@ -124,6 +124,7 @@ values."
    ;; by your Emacs build.
    ;; If the value is nil then no banner is displayed. (default 'official)
    dotspacemacs-startup-banner 'random
+   dotspacemacs-mode-line-theme 'spacemacs
    ;; List of items to show in startup buffer or an association list of
    ;; the form `(list-type . list-size)`. If nil then it is disabled.
    ;; Possible values for list-type are:
@@ -345,7 +346,7 @@ you should place your code here."
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["#0a0814" "#f2241f" "#67b11d" "#b1951d" "#4f97d7" "#a31db1" "#28def0" "#b2b2b2"])
- '(org-agenda-files (quote ("~/Documents/org/")))
+ '(org-agenda-files (quote ("~/Documents/org/" "~/Documents/squarespace/org/")))
  '(org-capture-templates
    (quote
     (("i" "Inbox item" entry
