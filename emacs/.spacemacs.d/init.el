@@ -47,6 +47,7 @@ This function should only modify configuration layer settings."
      markdown
      multiple-cursors
      (org :variables
+          org-enable-org-journal-support t
           org-want-todo-bindings t)
      (ruby :variables
            ruby-enable-enh-ruby-mode t
@@ -545,6 +546,9 @@ This function is called at the very end of Spacemacs initialization."
      ("p" "Interruption / phone call" entry
       (file "~/Documents/org/inbox.org")
       "" :clock-in t :clock-resume t :kill-buffer t))))
+ '(org-modules
+   (quote
+    (ol-bbdb ol-bibtex ol-docview ol-eww ol-gnus org-habit ol-info ol-irc ol-mhe ol-rmail ol-w3m)))
  '(org-outline-path-complete-in-steps nil)
  '(org-refile-allow-creating-parent-nodes (quote confirm))
  '(org-refile-targets (quote ((org-agenda-files :maxlevel . 1))))
