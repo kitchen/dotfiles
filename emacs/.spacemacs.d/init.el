@@ -33,33 +33,23 @@ This function should only modify configuration layer settings."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
-     (go :variables
-        ;; go-tab-width nil ;;) ;; this breaks go for some reason
-        go-tab-width 4 ;; docs say this should be nil when used with editorconfig but that doesn't seem to work
-        go-format-before-save t
-        gofmt-command "goimports"
-        go-use-testify-for-testing t)
-     terraform
-     ;; ----------------------------------------------------------------
-     ;; Example of useful layers you may want to use right away.
-     ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
-     ;; `M-m f e R' (Emacs style) to install them.
-     ;; ----------------------------------------------------------------
-     helm
      auto-completion
-     ;; better-defaults
      emacs-lisp
      git
      github
+     (go :variables
+         ;; go-tab-width nil ;;) ;; this breaks go for some reason
+         go-tab-width 4 ;; docs say this should be nil when used with editorconfig but that doesn't seem to work
+         go-format-before-save t
+         gofmt-command "goimports"
+         go-use-testify-for-testing t)
+     helm
      markdown
      multiple-cursors
      (org :variables
           org-want-todo-bindings t)
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
-     ;; spell-checking
      syntax-checking
+     terraform
      treemacs
      version-control
      )
