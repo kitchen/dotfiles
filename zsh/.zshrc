@@ -17,6 +17,8 @@ antigen bundle tmuxinator
 
 antigen theme denysdovhan/spaceship-prompt
 
+export EDITOR=vim
+
 if [[ $TERM_PROGRAM == 'iTerm.app' ]]; then
 	antigen bundle osx
 	. ~/.config/zsh/osx.rc
@@ -34,7 +36,6 @@ export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 export PATH=$PATH:$HOME/go/bin:$HOME/bin
 
-export EDITOR=vim
 
 
 export SPACESHIP_KUBECONTEXT_COLOR_GROUPS=(
