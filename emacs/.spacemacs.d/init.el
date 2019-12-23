@@ -167,7 +167,6 @@ It should only modify the values of Spacemacs settings."
    ;; by your Emacs build.
    ;; If the value is nil then no banner is displayed. (default 'official)
    dotspacemacs-startup-banner 'random
-   dotspacemacs-mode-line-theme 'spacemacs
    ;; List of items to show in startup buffer or an association list of
    ;; the form `(list-type . list-size)`. If nil then it is disabled.
    ;; Possible values for list-type are:
@@ -205,7 +204,8 @@ It should only modify the values of Spacemacs settings."
    ;; refer to the DOCUMENTATION.org for more info on how to create your own
    ;; spaceline theme. Value can be a symbol or list with additional properties.
    ;; (default '(spacemacs :separator wave :separator-scale 1.5))
-   dotspacemacs-mode-line-theme '(spacemacs :separator wave :separator-scale 1.5)
+   dotspacemacs-mode-line-theme '(spacemacs
+                                  :separator zigzag)
 
    ;; If non-nil the cursor color matches the state color in GUI Emacs.
    ;; (default t)
@@ -537,6 +537,7 @@ This function is called at the very end of Spacemacs initialization."
  '(org-agenda-file-regexp "\\`\\([^.].*\\.org\\|[0-9]\\{8\\}\\(\\.gpg\\)?\\)\\'")
  '(org-agenda-files (quote ("~/Documents/org/" "~/Documents/squarespace/org/")))
  '(org-agenda-skip-deadline-prewarning-if-scheduled (quote pre-scheduled))
+ '(org-agenda-todo-ignore-scheduled (quote future))
  '(org-capture-templates
    (quote
     (("i" "Inbox item" entry
@@ -546,6 +547,8 @@ This function is called at the very end of Spacemacs initialization."
       (file "~/Documents/org/inbox.org")
       "" :clock-in t :clock-resume t :kill-buffer t))))
  '(org-crypt-key "E02549FD897E038505052462BEB441496300CC3D")
+ '(org-default-notes-file "/Users/kitchen/Documents/org/notes.org")
+ '(org-directory "~/Documents/org/")
  '(org-habit-show-habits-only-for-today nil)
  '(org-journal-dir "~/Documents/org/journal/")
  '(org-log-redeadline (quote time))
