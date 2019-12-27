@@ -51,6 +51,7 @@ This function should only modify configuration layer settings."
      (org :variables
           org-enable-org-journal-support t
           org-want-todo-bindings t)
+     protobuf
      python
      (ruby :variables
            ruby-enable-enh-ruby-mode t
