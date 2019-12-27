@@ -543,6 +543,12 @@ This function is called at the very end of Spacemacs initialization."
  '(org-agenda-file-regexp "\\`\\([^.].*\\.org\\|[0-9]\\{8\\}\\(\\.gpg\\)?\\)\\'")
  '(org-agenda-files (quote ("~/Documents/org/" "~/Documents/squarespace/org/")))
  '(org-agenda-skip-deadline-prewarning-if-scheduled (quote pre-scheduled))
+ '(org-agenda-sorting-strategy
+   (quote
+    ((agenda time-up priority-down category-keep)
+     (todo priority-down category-keep)
+     (tags priority-down category-keep)
+     (search category-keep))))
  '(org-agenda-todo-ignore-scheduled (quote future))
  '(org-capture-templates
    (quote
