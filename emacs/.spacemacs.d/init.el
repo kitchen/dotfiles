@@ -541,6 +541,9 @@ This function is called at the very end of Spacemacs initialization."
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["#0a0814" "#f2241f" "#67b11d" "#b1951d" "#4f97d7" "#a31db1" "#28def0" "#b2b2b2"])
+ '(calendar-latitude 45.5)
+ '(calendar-location-name "Portland, OR")
+ '(calendar-longitude -122.6)
  '(evil-want-Y-yank-to-eol nil)
  '(org-agenda-file-regexp "\\`\\([^.].*\\.org\\|[0-9]\\{8\\}\\(\\.gpg\\)?\\)\\'")
  '(org-agenda-files (quote ("~/Documents/org/" "~/Documents/squarespace/org/")))
