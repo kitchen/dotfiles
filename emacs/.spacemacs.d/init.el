@@ -568,6 +568,7 @@ This function is called at the very end of Spacemacs initialization."
  '(org-crypt-key "E02549FD897E038505052462BEB441496300CC3D")
  '(org-default-notes-file "/Users/kitchen/Documents/org/notes.org")
  '(org-directory "~/Documents/org/")
+ '(org-habit-graph-column 50)
  '(org-habit-show-habits-only-for-today nil)
  '(org-insert-heading-respect-content t)
  '(org-journal-dir "~/Documents/org/journal/")
