@@ -554,6 +554,7 @@ This function is called at the very end of Spacemacs initialization."
  '(calendar-latitude 45.5)
  '(calendar-location-name "Portland, OR")
  '(calendar-longitude -122.6)
+ '(epa-pinentry-mode (quote loopback))
  '(evil-want-Y-yank-to-eol nil)
  '(org-agenda-file-regexp "\\`\\([^.].*\\.org\\|[0-9]\\{8\\}\\(\\.gpg\\)?\\)\\'")
  '(org-agenda-files (quote ("~/Documents/org/" "~/Documents/squarespace/org/")))
@@ -565,6 +566,12 @@ This function is called at the very end of Spacemacs initialization."
      (tags priority-down category-keep)
      (search category-keep))))
  '(org-agenda-todo-ignore-scheduled (quote future))
+ '(org-archive-location "%s_archive::datetree/")
+ '(org-attach-auto-tag nil)
+ '(org-attach-expert t)
+ '(org-attach-id-dir "files/")
+ '(org-attach-preferred-new-method (quote ask))
+ '(org-attach-use-inheritance t)
  '(org-bullets-bullet-list (quote ("■" "◆" "▲" "▶")))
  '(org-capture-templates
    (quote
@@ -582,6 +589,7 @@ This function is called at the very end of Spacemacs initialization."
  '(org-habit-show-habits-only-for-today nil)
  '(org-insert-heading-respect-content t)
  '(org-journal-dir "~/Documents/org/journal/")
+ '(org-journal-encrypt-journal t)
  '(org-log-redeadline (quote time))
  '(org-log-reschedule (quote time))
  '(org-modules
@@ -589,7 +597,7 @@ This function is called at the very end of Spacemacs initialization."
     (ol-bbdb ol-bibtex org-crypt ol-docview ol-eww ol-gnus org-habit ol-info ol-irc ol-mhe org-protocol ol-rmail ol-w3m)))
  '(org-outline-path-complete-in-steps nil)
  '(org-refile-allow-creating-parent-nodes (quote confirm))
- '(org-refile-targets (quote ((org-agenda-files :maxlevel . 1))))
+ '(org-refile-targets (quote ((org-agenda-files :maxlevel . 2))))
  '(org-refile-use-outline-path (quote file))
  '(org-startup-indented t)
  '(org-todo-keywords
@@ -597,7 +605,7 @@ This function is called at the very end of Spacemacs initialization."
     ((type "TODO(t)" "NEXT(n!)" "WAITING(w@/!)" "SNOOZED(s!/!)" "|" "CANCELLED(c@/@)" "DONE(d!)"))))
  '(package-selected-packages
    (quote
-    (utop tuareg caml rjsx-mode ocp-indent ob-elixir nodejs-repl mvn meghanada maven-test-mode livid-mode skewer-mode json-navigator hierarchy json-mode json-snatcher json-reformat js2-refactor multiple-cursors js2-mode js-doc groovy-mode groovy-imports gradle-mode flycheck-ocaml merlin flycheck-mix flycheck-credo emojify emoji-cheat-sheet-plus dune company-tern tern lsp-mode dash-functional company-emoji auto-complete-rst alchemist elixir-mode achievements keyfreq go-snippets magit-gh-pulls github-search github-clone github-browse-file gist gh marshal logito pcache ht yasnippet-snippets helm-company helm-c-yasnippet fuzzy company-statistics company-go company auto-yasnippet yasnippet ac-ispell auto-complete editorconfig terraform-mode hcl-mode solarized-theme unfill mwim smeargle orgit org-projectile org-category-capture org-present org-pomodoro alert log4e gntp org-mime org-download mmm-mode markdown-toc markdown-mode magit-gitflow magit-popup htmlize helm-gitignore gnuplot gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter gh-md flycheck-pos-tip pos-tip flycheck evil-magit magit transient git-commit with-editor diff-hl go-guru go-eldoc go-mode ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hydra lv hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation helm-themes helm-swoop helm-projectile projectile pkg-info epl helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist highlight evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu elisp-slime-nav dumb-jump f dash s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async)))
+    (lsp-ui lsp-python-ms helm-lsp dap-mode lsp-treemacs bui company-lsp lsp-mode dash-functional go-snippets magit-gh-pulls github-search github-clone github-browse-file gist gh marshal logito pcache ht yasnippet-snippets helm-company helm-c-yasnippet fuzzy company-statistics company-go company auto-yasnippet yasnippet ac-ispell auto-complete editorconfig terraform-mode hcl-mode solarized-theme unfill mwim smeargle orgit org-projectile org-category-capture org-present org-pomodoro alert log4e gntp org-mime org-download mmm-mode markdown-toc markdown-mode magit-gitflow magit-popup htmlize helm-gitignore gnuplot gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter gh-md flycheck-pos-tip pos-tip flycheck evil-magit magit transient git-commit with-editor diff-hl go-guru go-eldoc go-mode ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hydra lv hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation helm-themes helm-swoop helm-projectile projectile pkg-info epl helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist highlight evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu elisp-slime-nav dumb-jump f dash s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async)))
  '(paradox-github-token t)
  '(send-mail-function (quote mailclient-send-it))
  '(vc-follow-symlinks t))

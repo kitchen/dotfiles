@@ -2,6 +2,7 @@ stows=(
 	bash
 	emacs
 	git
+	gpg
 	hg
 	squarespace
 	ssh
