@@ -1,9 +1,10 @@
 stows=(
 	bash
-	emacs
+	doom-emacs
 	git
 	gpg
 	hg
+	#spacemacs
 	squarespace
 	ssh
 	thefuck
