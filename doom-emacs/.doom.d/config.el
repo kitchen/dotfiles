@@ -23,7 +23,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. These are the defaults.
-(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-solarized-dark)
 
 ;; If you intend to use org, it is recommended you change this!
 (setq org-directory "~/Documents/org/")
@@ -48,3 +48,10 @@
 ;;
 ;; You can also try 'gd' (or 'C-c g d') to jump to their definition and see how
 ;; they are implemented.
+
+(setq org-archive-location "%s_archive::datetree/")
+(setq org-attach-auto-tag nil)
+(setq org-attach-expert t)
+(setq org-attach-id-dir "files/")
+(setq org-attach-preferred-new-method (quote ask))
+(setq org-attach-use-inheritance t)
