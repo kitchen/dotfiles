@@ -1,0 +1,4 @@
+host *.gcp.*.squarespace.net
+       user jkitchen_squarespace_com
+       identityfile ~/.ssh/google_compute_engine
+
