@@ -21,3 +21,5 @@
 
 [color "diff"]
 	whitespace = red reverse
+[diff "ansible-vault"]
+	textconv = ansible-vault view

@@ -31,3 +31,8 @@ SPACESHIP_KUBECONTEXT_COLOR_GROUPS+=(
 export GOPROXY=artifactory.squarespace.net/api/go/go
 export GOPRIVATE=*.squarespace.net
 export GONOPROXY=none
+
+
+function lsearch {
+    ldapsearch -h ldap.squarespace.net -x -b "ou=people,dc=sq,dc=net" "uid=${1}"
+}
