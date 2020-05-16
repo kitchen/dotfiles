@@ -31,11 +31,26 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/Documents/org/")
 
+;; ----- Line numbers
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
+(require 'display-line-numbers)
 (setq display-line-numbers-type t)
 
+;; set line numbers only on prog-mode / conf-mode a la dotspacemacs-line-numbers :enabled-for-modes
+;; https://github.com/syl20bnr/spacemacs/issues/8919
+;; first, we undo the add-hook! from doom-emacs default:
+(remove-hook! '(prog-mode-hook text-mode-hook conf-mode-hook)
+           #'display-line-numbers-mode)
 
+;; then we add it back to the modes we want
+(add-hook! '(prog-mode-hook conf-mode-hook)
+           #'display-line-numbers-mode)
+;; basically, I don't want it for org-mode, and org-mode is text-mode, I may
+;; want to have it enabled for other text-modes later but this is fine for now
+
+
+;; ----- more stuff
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
 ;; - `load!' for loading external *.el files relative to this one
@@ -52,3 +67,14 @@
 ;;
 ;; You can also try 'gd' (or 'C-c g d') to jump to their definition and see how
 ;; they are implemented.
+
+;; sets the frame title to buffer name * project-name, booya
+;; I'd like it to be the project-relative filename if the buffer is visiting a file, but the biggest thing I use right now is
+;; the project name to see which minimized frame has the project I want (ansible, org, etc)
+(setq frame-title-format
+      '(""
+        "%b"
+        (:eval
+         (let ((project-name (projectile-project-name)))
+           (unless (string= "-" project-name)
+             (format (if (buffer-modified-p)  " ◉ %s" "  ●  %s") project-name))))))
