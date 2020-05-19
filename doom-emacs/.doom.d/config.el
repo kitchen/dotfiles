@@ -83,3 +83,13 @@
 (setq evil-respect-visual-line-mode t)
 (add-hook! '(prog-mode-hook text-mode-hook conf-mode-hook)
            #'turn-on-visual-line-mode)
+
+;; avy-dvorak :grin:
+;; avy tutorial thing: https://www.youtube.com/watch?v=zar4GsOBU0g
+(setq avy-keys '(?a ?o ?e ?u ?h ?t ?n ?s))
+
+(setq org-superstar-headline-bullets-list (quote ("■" "◆" "▲" "▶")))
+
+;; ---- org-journal stuffs
+(setq org-journal-encrypt-journal t)
+(setq org-journal-carryover-items nil)
