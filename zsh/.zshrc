@@ -56,7 +56,7 @@ fi
 
 # spaceship prompt settings
 #export SPACESHIP_PROMPT_SEPARATE_LINE=false
-export SPACESHIP_PROMPT_ORDER=(time user host dir git ruby aws venv kubecontext terraform rust exec_time exit_code line_sep battery vi_mode jobs char)
+export SPACESHIP_PROMPT_ORDER=(time user host dir git ruby aws venv kubectl_context terraform rust exec_time exit_code line_sep battery vi_mode jobs char)
 export SPACESHIP_DIR_PREFIX=":: "
 export SPACESHIP_DIR_COLOR=yellow
 export SPACESHIP_GIT_PREFIX="‹"
