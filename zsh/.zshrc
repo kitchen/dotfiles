@@ -82,6 +82,9 @@ export SPACESHIP_USER_PREFIX=""
 export SPACESHIP_RUST_PREFIX=""
 
 source ~/.config/zsh/ssh-ca.rc
+if [[ -f ~/.cargo/env ]]; then
+   source ~/.cargo/env
+fi
 
 alias gcp=gcloud
 alias e=emacsclient
