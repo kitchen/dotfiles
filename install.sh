@@ -18,7 +18,7 @@ retired_stows=(
 
 if ! which stow > /dev/null; then
 	echo "stow required, please install"
-	echo "`brew install stow` or `sudo apt install stow`"
+	echo '`brew install stow` or `sudo apt install stow`'
 	exit 2
 fi
 
