@@ -3,7 +3,6 @@
 ;; Place your private configuration here! Remember, you do not need to run 'doom
 ;; sync' after modifying this file!
 
-
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets.
 (setq user-full-name "Jeremy Kitchen"
@@ -93,3 +92,6 @@
 ;; ---- org-journal stuffs
 (setq org-journal-encrypt-journal t)
 (setq org-journal-carryover-items nil)
+
+(after! load-directory
+  (load-directory "~/.doom.d/config.d/"))
