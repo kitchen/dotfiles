@@ -1,4 +1,5 @@
 stows=(
+	aws
 	bash
 	doom-emacs
 	fzf
@@ -9,10 +10,12 @@ stows=(
 	hg
 	kubernetes
 	osx
+	python
 	ruby
 	rust
 	squarespace
 	ssh
+	terraform
 	thefuck
 	tmux
 	vim
