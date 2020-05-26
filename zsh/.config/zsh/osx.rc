@@ -1,3 +1,0 @@
-export PATH=$PATH:/usr/local/sbin
-export EDITOR=emacsclient
-export ALTERNATE_EDITOR=vim

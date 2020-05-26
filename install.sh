@@ -1,9 +1,16 @@
 stows=(
 	bash
 	doom-emacs
+	fzf
+	gcloud
 	git
+	golang
 	gpg
 	hg
+	kubernetes
+	osx
+	ruby
+	rust
 	squarespace
 	ssh
 	thefuck
@@ -12,16 +19,10 @@ stows=(
 	zsh
 )
 
-retired_stows=(
-	spacemacs
-)
-
 if ! which stow > /dev/null; then
 	echo "stow required, please install"
 	echo '`brew install stow` or `sudo apt install stow`'
 	exit 2
 fi
-
-stow -D -v ${retired_stows[@]}
 
 stow -R -v ${stows[@]}
