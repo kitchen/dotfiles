@@ -16,7 +16,6 @@ alias pohara='mosh -p 60000:60250 pohara'
 alias e=emacsclient
 
 # spaceship prompt settings
-#export SPACESHIP_PROMPT_SEPARATE_LINE=false
 # TODO make this "modular".
 # idea being: make an associative arary, module -> priority, sort the modules by priority and build this list
 export SPACESHIP_PROMPT_ORDER=(time user host dir git ruby aws venv kubectl_context terraform rust exec_time exit_code line_sep battery vi_mode jobs char)
@@ -31,6 +30,5 @@ export SPACESHIP_HOST_PREFIX="@"
 export SPACESHIP_HOST_COLOR_SSH=yellow
 export SPACESHIP_USER_SUFFIX=""
 export SPACESHIP_USER_PREFIX=""
-
 
 antigen apply
