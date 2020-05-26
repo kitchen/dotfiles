@@ -6,7 +6,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 eval "$(direnv hook zsh)"
 
-for zshrc in ~/.config/zsh/*.zshrc; do
+for zshrc in ~/.config/zsh/*.zsh; do
 	source $zshrc
 done
 
