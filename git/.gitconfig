@@ -13,13 +13,8 @@
 [include]
 	path = ~/.config/git/local
 
-[includeIf "gitdir:~/go/src/code.squarespace.net/**"]
-	path = ~/.config/squarespace/git.config
-
-[includeIf "gitdir:~/squarespace/**"]
-	path = ~/.config/squarespace/git.config
-
 [color "diff"]
 	whitespace = red reverse
-[diff "ansible-vault"]
-	textconv = ansible-vault view
+
+[include]
+	path = ~/.config/git/squarespace.config
