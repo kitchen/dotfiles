@@ -1,5 +1,7 @@
 antigen bundle rust
 
+SPACESHIP_PROMPT_KITCHEN_MODULES+=rust
+
 export SPACESHIP_RUST_PREFIX=""
 
 if [[ -f ~/.cargo/env ]]; then

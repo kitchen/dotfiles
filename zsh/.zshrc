@@ -5,6 +5,7 @@ antigen theme denysdovhan/spaceship-prompt
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 eval "$(direnv hook zsh)"
+export SPACESHIP_PROMPT_KITCHEN_MODULES=()
 
 for zshrc in ~/.config/zsh/*.zsh; do
 	source $zshrc
@@ -16,9 +17,7 @@ alias pohara='mosh -p 60000:60250 pohara'
 alias e=emacsclient
 
 # spaceship prompt settings
-# TODO make this "modular".
-# idea being: make an associative arary, module -> priority, sort the modules by priority and build this list
-export SPACESHIP_PROMPT_ORDER=(time user host dir git ruby aws venv kubectl_context terraform rust exec_time exit_code line_sep battery vi_mode jobs char)
+export SPACESHIP_PROMPT_ORDER=(time user host dir git ${SPACESHIP_PROMPT_KITCHEN_MODULES[@]} exec_time exit_code line_sep battery vi_mode jobs char)
 export SPACESHIP_DIR_PREFIX=":: "
 export SPACESHIP_DIR_COLOR=yellow
 export SPACESHIP_DIR_TRUNC_REPO=false
