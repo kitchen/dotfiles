@@ -1,4 +1,5 @@
 antigen bundle github
+antigen bundle gitfast
 
 export SPACESHIP_GIT_PREFIX="‹"
 export SPACESHIP_GIT_SUFFIX="› "

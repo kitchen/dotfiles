@@ -1,1 +1,3 @@
+antigen bundle terraform
+
 SPACESHIP_PROMPT_KITCHEN_MODULES+=terraform

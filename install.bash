@@ -1,4 +1,5 @@
 stows=(
+	autojump
 	aws
 	bash
 	doom-emacs
@@ -11,6 +12,7 @@ stows=(
 	kubernetes
 	osx
 	python
+	rg
 	ruby
 	rust
 	squarespace
