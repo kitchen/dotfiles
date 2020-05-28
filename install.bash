@@ -20,7 +20,6 @@ stows=(
 	terraform
 	thefuck
 	tmux
-	vim
 	zsh
 )
 
@@ -30,4 +29,5 @@ if ! which stow > /dev/null; then
 	exit 2
 fi
 
+stow -D vim
 stow -R --ignore .gitkeep -v ${stows[@]}
