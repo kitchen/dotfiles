@@ -17,6 +17,9 @@ sudo apt -y install apt-transport-https gnupg2 curl
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 
+# gcloud repo
+echo "deb https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee /etc/apt/sources.list.d/google-cloud-sdk.list
+
 # docker repo
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
@@ -24,4 +27,4 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt update
 
 
-sudo apt -y install thefuck python3-dev python3-pip python3-setuptools kubectl direnv ripgrep tar fd-find clang emacs vim stow software-properties-common docker-ce docker-ce-cli containerd.io tmux tmuxinator
+sudo apt -y install thefuck python3-dev python3-pip python3-setuptools kubectl direnv ripgrep tar fd-find clang emacs vim stow software-properties-common docker-ce docker-ce-cli containerd.io tmux tmuxinator google-cloud-sdk
