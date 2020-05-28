@@ -16,10 +16,15 @@
 ;; + `doom-big-font' -- used for `doom-big-font-mode'; use this for
 ;;   presentations or streaming.
 ;;
-;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
-;; font string. You generally only need these two:
-(setq doom-font (font-spec :family "SFMono Nerd Font"))
-(setq doom-variable-pitch-font (font-spec :family "SF Pro Display"))
+;; emacs on my ubuntu macbook pro seems to need *much* larger font sizes, probably because it's using actual pixels instead of scaled
+;; but the emacs on my macos laptops uses the scaled pixels or ... I don't really know. I know it's hidpi something something
+;; and apparently it's maybe also fixed in emacs 27? I'll figure that out later
+(if (eq system-type 'gnu/linux)
+    (setq-local kitchen/base-font-size 32) ;; linux (hidpi, anyways)
+    (setq-local kitchen/base-font-size 14) ;; macos
+    )
+(setq doom-font (font-spec :family "SFMono Nerd Font" :size kitchen/base-font-size))
+(setq doom-variable-pitch-font (font-spec :family "SF Pro Display" :size kitchen/base-font-size))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
