@@ -94,9 +94,10 @@
 ;; avy tutorial thing: https://www.youtube.com/watch?v=zar4GsOBU0g
 (setq avy-keys '(?a ?o ?e ?u ?h ?t ?n ?s))
 
-(setq org-superstar-headline-bullets-list (quote ("■" "◆" "▲" "▶")))
 
-;; ---- org-journal stuffs
+;; ---- org mode things
+(setq org-attach-auto-tag nil)
+(setq org-superstar-headline-bullets-list (quote ("■" "◆" "▲" "▶")))
 (setq org-journal-encrypt-journal t)
 (setq org-journal-carryover-items nil)
 
@@ -123,3 +124,7 @@
 ;; load files from config.d directory
 (after! load-directory
   (load-directory "~/.doom.d/config.d/"))
+
+
+;; because I'm *constantly* typing :W
+(evil-ex-define-cmd "W" "write")
