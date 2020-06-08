@@ -129,3 +129,11 @@
 
 ;; because I'm *constantly* typing :W
 (evil-ex-define-cmd "W" "write")
+
+;; just squarespace things
+;; TODO move this into squarespace-specific config
+(if (file-directory-p "~/Documents/squarespace/org")
+    (add-to-list 'org-agenda-files "~/Documents/squarespace/org"))
+;; set yaml mode for ansible group_vars files
+(add-to-list 'auto-mode-alist
+             '("ansible/group_vars/.*" . yaml-mode))
