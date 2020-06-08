@@ -48,3 +48,4 @@
 
 (package! solarized-theme)
 (package! load-directory)
+(package! protobuf-mode)
