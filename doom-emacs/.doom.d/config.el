@@ -100,6 +100,7 @@
 (setq org-superstar-headline-bullets-list (quote ("■" "◆" "▲" "▶")))
 (setq org-journal-encrypt-journal t)
 (setq org-journal-carryover-items nil)
+(setq org-agenda-skip-deadline-prewarning-if-scheduled t)
 
 ;; https://github.com/hlissner/doom-emacs/blob/develop/docs/api.org#persist-emacs-initial-frame-position-dimensions-andor-full-screen-state-across-sessions
 (when-let (dims (doom-store-get 'last-frame-size))
