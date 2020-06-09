@@ -132,8 +132,9 @@
 
 ;; just squarespace things
 ;; TODO move this into squarespace-specific config
-(if (file-directory-p "~/Documents/squarespace/org")
-    (add-to-list 'org-agenda-files "~/Documents/squarespace/org"))
 ;; set yaml mode for ansible group_vars files
+(after! org
+  (if (file-directory-p "~/Documents/squarespace/org")
+      (add-to-list 'org-agenda-files "~/Documents/squarespace/org")))
 (add-to-list 'auto-mode-alist
              '("ansible/group_vars/.*" . yaml-mode))
