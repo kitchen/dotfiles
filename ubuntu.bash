@@ -28,3 +28,7 @@ sudo apt update
 
 
 sudo apt -y install thefuck python3-dev python3-pip python3-setuptools kubectl direnv ripgrep tar fd-find clang emacs vim stow software-properties-common docker-ce docker-ce-cli containerd.io docker-compose tmux tmuxinator google-cloud-sdk
+
+# if the machine is a server, do this. I am unsure about desktops
+# https://bugs.launchpad.net/ubuntu/+source/openssh/+bug/920749?comments=all
+# sudo localectl set-locale en_US.utf8
