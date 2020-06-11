@@ -48,3 +48,6 @@
 
 (package! load-directory)
 (package! protobuf-mode)
+
+;; clipetty currently doesn't work with mosh. Maybe I'll fix that. Not today.
+(package! clipetty :disable t)
