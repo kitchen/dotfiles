@@ -56,3 +56,5 @@ sudo apt -y install \
 # if the machine is a server, do this. I am unsure about desktops
 # https://bugs.launchpad.net/ubuntu/+source/openssh/+bug/920749?comments=all
 # sudo localectl set-locale en_US.utf8
+# also on raspberry pi the default timezone is set to london
+# sudo dpkg-reconfigure tzdata
