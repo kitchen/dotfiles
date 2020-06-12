@@ -1,2 +1,2 @@
-terminfo-24bit.src
-Makefile
+terminfo-*.src
+build-terminfo.bash
