@@ -16,5 +16,10 @@
 [color "diff"]
 	whitespace = red reverse
 
+# *really* clever hack to change the default branch to `main`:
+# https://stackoverflow.com/a/50880622
+[init]
+	templateDir = ~/.config/git/template
+
 [include]
 	path = ~/.config/git/squarespace.config
