@@ -140,3 +140,5 @@
              '("ansible/group_vars/.*" . yaml-mode))
 (add-to-list 'auto-mode-alist
              '("ansible/host_vars/.*" . yaml-mode))
+(add-to-list 'auto-mode-alist
+             '("ansible/inventory\.*" . conf-mode))
