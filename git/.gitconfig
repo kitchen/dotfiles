@@ -7,11 +7,8 @@
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	l2 = log --graph --all --abbrev-commit --pretty=oneline --decorate
 	commit = commit -S
-[core]
 [push]
 	default = current
-[include]
-	path = ~/.config/git/local
 
 [color "diff"]
 	whitespace = red reverse
