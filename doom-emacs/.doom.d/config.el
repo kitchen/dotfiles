@@ -122,6 +122,9 @@
 
 (add-hook 'kill-emacs-hook #'save-frame-dimensions)
 
+(add-to-list 'auto-mode-alist
+             '(".ssh/config.d/.*" . conf-space-mode))
+
 ;; load files from config.d directory
 (after! load-directory
   (load-directory "~/.doom.d/config.d/"))
