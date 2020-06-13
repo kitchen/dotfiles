@@ -2,6 +2,9 @@
 	name = Jeremy Kitchen
 	email = kitchen@kitchen.io
 
+[pull]
+	rebase = true
+
 # *really* clever hack to change the default branch to `main`:
 # https://stackoverflow.com/a/50880622
 [init]
