@@ -1,2 +1,2 @@
-terminfo-*.src
+terminfo-.*.src
 build-terminfo.bash
