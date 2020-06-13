@@ -1,17 +1,6 @@
 [user]
 	name = Jeremy Kitchen
 	email = kitchen@kitchen.io
-[color]
-	ui = auto
-[alias]
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	l2 = log --graph --all --abbrev-commit --pretty=oneline --decorate
-	commit = commit -S
-[push]
-	default = current
-
-[color "diff"]
-	whitespace = red reverse
 
 # *really* clever hack to change the default branch to `main`:
 # https://stackoverflow.com/a/50880622
