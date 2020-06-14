@@ -40,6 +40,7 @@ if [[ -d $HOME/squarespace ]]; then
 	}
 
 	# virtualenvwrapper
+	# TODO move this to the python stow?
 	if [[ -f /usr/local/bin/virtualenvwrapper.sh ]]; then
 		export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
 		export WORKON_HOME=~/python/
