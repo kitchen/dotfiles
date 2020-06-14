@@ -46,6 +46,4 @@ if [[ -d $HOME/squarespace ]]; then
 		export WORKON_HOME=~/python/
 		source /usr/local/bin/virtualenvwrapper_lazy.sh
 	fi
-
-	export SPACESHIP_VENV_PREFIX="venv: "
 fi
