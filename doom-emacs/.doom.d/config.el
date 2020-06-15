@@ -132,6 +132,8 @@
 
 ;; because I'm *constantly* typing :W
 (evil-ex-define-cmd "W" "write")
+;; because my work email address starts with `jk'
+(setq evil-escape-key-sequence nil)
 
 ;; just squarespace things
 ;; TODO move this into squarespace-specific config
