@@ -147,3 +147,15 @@
              '("ansible/host_vars/.*" . yaml-mode))
 (add-to-list 'auto-mode-alist
              '("ansible/inventory\.*" . conf-mode))
+
+(setq doom-themes-treemacs-theme "doom-atom")
+(after! treemacs
+  (message "KITCHEN: treemacs loaded"))
+
+(after! doom-themes-ext-treemacs
+  (after! treemacs
+    (treemacs-modify-theme "doom-atom"
+                           :config
+                           (progn
+                             ;; (treemacs-create-icon :icon "Q " :fallback "M " :extensions ("kitchen"))
+                             ))))
