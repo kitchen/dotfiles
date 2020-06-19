@@ -30,4 +30,6 @@ if ! which stow > /dev/null; then
 	exit 2
 fi
 
+git submodule init && git submodule update
+
 stow -R --ignore .gitkeep -v ${stows[@]}

@@ -22,14 +22,14 @@ echo "deb https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee /etc/
 
 # docker repo
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo add-apt-repository "deb https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 
 sudo apt update
 
 
 sudo apt -y install \
+    autojump
     clang \
-    containerd.io \
     direnv \
     docker-ce-cli \
     docker-ce \
@@ -37,6 +37,7 @@ sudo apt -y install \
     editorconfig \
     emacs \
     fd-find \
+    fzf
     google-cloud-sdk \
     kubectl \
     pandoc \
@@ -44,7 +45,7 @@ sudo apt -y install \
     python3-pip \
     python3-setuptools \
     ripgrep \
-    shellcheck
+    shellcheck \
     software-properties-common \
     stow \
     tar \
