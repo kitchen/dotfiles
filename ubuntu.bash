@@ -28,7 +28,7 @@ sudo apt update
 
 
 sudo apt -y install \
-    autojump
+    autojump \
     clang \
     direnv \
     docker-ce-cli \
@@ -37,7 +37,7 @@ sudo apt -y install \
     editorconfig \
     emacs \
     fd-find \
-    fzf
+    fzf \
     google-cloud-sdk \
     kubectl \
     pandoc \
