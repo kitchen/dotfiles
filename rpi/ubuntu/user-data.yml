@@ -172,7 +172,7 @@ users:
       - lxd
       - docker
 
-    authorized_keys:
+    ssh_authorized_keys:
       # certificates signed by my CA
       - cert-authority,principals="kitchen" ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYTVd2lJwhj+SNtvnXv2oxkQXGvPI/fWDxYKGovO/Fb5E2X+HX1cCxnkt75cF8X2DlBdeoi/lGRKugWzmvZaVLPRXUVD8C/55qJJiC2aE0EX43+kwad3igs9lP2rhdOOS8k6u77OrHMrQMBZYtwdXK8WUmyn5kI5Cwt41YcdsLe7NncpgMxYDCwSaTrv7g4MC1/TyUFXAImSD4jfuhTZIPuPBjsPjHmlH3hdN0ToUnn1tQ2Qf2SkFcAVJrHW4nefEe5mU1KILve+CbwPrSu3H/ovQFYgLUkR7bl+/SQ24aOY01UCwBVLNvm2W/j+c9xgWl5P+V/cz8oAvcCAYTKVnJW5B04634+iWt1jTmhxFNvNYoHqUNjFiJy/k/vuqvG7cS5QH8+F+DN0Tg63W8ZBbS90toj03smCdKtUZiAAY9OK025CrryXckZYVq4Jxj0Hk3Y9Ux7SHajiTtF29EaAQokHAvqtCVffgu+OTdv6hCn4FSIOAmI7m6yojgEETbDo+whN7hCfF5FmJjOVkMhHXwsqB8K1u46NCZKfNBOIHYp7a40rLG/dhBiCjF1+lDrCzkKPeppfVymyU7Xygq4uL0vmwY/zMPbJDDtNjEnapZwUbE/rZ+5bLxU3UVTc0ns2e9DfmNn4a4SZaOoOCqAffACofGHARGd0f+dFnkojaQ5w==
       # blink on my iPad since it doesn't support certificates yet
