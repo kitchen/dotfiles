@@ -1,4 +1,7 @@
 #cloud-config
+hostname: wharariki
+timezone: America/Los_Angeles
+locale: en_US.utf8
 
 apt:
   preserve_sources_list: true
@@ -7,6 +10,7 @@ apt:
       source: "deb https://apt.kubernetes.io/ kubernetes-$RELEASE main"
       key: |
         -----BEGIN PGP PUBLIC KEY BLOCK-----
+
         mQENBFrBaNsBCADrF18KCbsZlo4NjAvVecTBCnp6WcBQJ5oSh7+E98jX9YznUCrN
         rgmeCcCMUvTDRDxfTaDJybaHugfba43nqhkbNpJ47YXsIa+YL6eEE9emSmQtjrSW
         IiY+2YJYwsDgsgckF3duqkb02OdBQlh6IbHPoXB6H//b1PgZYsomB+841XW1LSJP
@@ -27,6 +31,7 @@ apt:
       source: "deb https://packages.cloud.google.com/apt cloud-sdk main"
       key: |
         -----BEGIN PGP PUBLIC KEY BLOCK-----
+
         mQENBFrBaNsBCADrF18KCbsZlo4NjAvVecTBCnp6WcBQJ5oSh7+E98jX9YznUCrN
         rgmeCcCMUvTDRDxfTaDJybaHugfba43nqhkbNpJ47YXsIa+YL6eEE9emSmQtjrSW
         IiY+2YJYwsDgsgckF3duqkb02OdBQlh6IbHPoXB6H//b1PgZYsomB+841XW1LSJP
@@ -47,6 +52,7 @@ apt:
       source: "deb https://download.docker.com/linux/ubuntu $RELEASE stable"
       key: |
         -----BEGIN PGP PUBLIC KEY BLOCK-----
+
         mQINBFit2ioBEADhWpZ8/wvZ6hUTiXOwQHXMAlaFHcPH9hAtr4F1y2+OYdbtMuth
         lqqwp028AqyY+PRfVMtSYMbjuQuu5byyKR01BbqYhuS3jtqQmljZ/bJvXqnmiVXh
         38UuLa+z077PxyxQhu5BbqntTPQMfiyqEiU+BKbq2WmANUKQf+1AmZY/IruOXbnq
@@ -108,21 +114,28 @@ apt:
         =0YYh
         -----END PGP PUBLIC KEY BLOCK-----
 
+ssh_pwauth: false
+write_files:
+  - path: /etc/ssh/sshd_config.d/enables-rsa-alg.conf
+    content: |
+      CASignatureAlgorithms ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-ed25519,rsa-sha2-512,rsa-sha2-256,ssh-rsa
+runcmd:
+  - service ssh restart
 packages:
   - autojump
   - clang
   - curl
   - direnv
-  - docker-ce
-  - docker-ce-cli
-  - docker-compose
+  # - docker-ce
+  # - docker-ce-cli
+  # - docker-compose
   - editorconfig
   - emacs
   - fd-find
   - fzf
   - gnupg2
-  - google-cloud-sdk
-  - kubectl
+  # - google-cloud-sdk
+  # - kubectl
   - pandoc
   - python3-dev
   - python3-pip
