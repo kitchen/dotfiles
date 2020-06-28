@@ -1,0 +1,21 @@
+# frozen_string_literal: true
+
+brew 'autojump'
+brew 'awscli'
+brew 'awscli'
+brew 'direnv'
+brew 'editorconfig'
+brew 'fd'
+brew 'fzf'
+brew 'mosh'
+brew 'pandoc'
+brew 'ripgrep'
+brew 'shellcheck'
+brew 'starship'
+brew 'stow'
+brew 'thefuck'
+brew 'tmux'
+brew 'vault'
+
+tap 'd12frosted/emacs-plus'
+brew 'emacs-plus'
