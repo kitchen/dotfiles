@@ -67,3 +67,5 @@ style = "bright-yellow"
 [aws]
 displayed_items = "profile"
 
+[character]
+use_symbol_for_status = true
