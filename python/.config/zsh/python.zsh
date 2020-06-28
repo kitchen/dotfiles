@@ -1,2 +1,2 @@
-SPACESHIP_PROMPT_KITCHEN_MODULES+=venv
-export SPACESHIP_VENV_PREFIX="venv: "
+antigen bundle virtualenv
+antigen bundle virtualenvwrapper

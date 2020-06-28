@@ -18,17 +18,18 @@ if [[ -d $HOME/squarespace ]]; then
 
 
 	# kubecontext colors
-	SPACESHIP_KUBECONTEXT_COLOR_GROUPS+=(
-		# the regex is on the entire 'context (namespace)' string, which is a bit of a sad, but that's ok
-		green '^[^(]*-sandbox'
-		green '^qa[-1-9]+'
-		green '^gke_.*-dev-'
-		yellow '^[^(]*-stage'
-		yellow '^gke_.*-stage-'
-		red '^[^(]*-(prod|internal|corp)'
-		red '^gke_.*-corp-'
-		red '^gke_.*-prod-'
-	)
+	# TODO is there such a thing for p10k?
+	# SPACESHIP_KUBECONTEXT_COLOR_GROUPS+=(
+	# 	# the regex is on the entire 'context (namespace)' string, which is a bit of a sad, but that's ok
+	# 	green '^[^(]*-sandbox'
+	# 	green '^qa[-1-9]+'
+	# 	green '^gke_.*-dev-'
+	# 	yellow '^[^(]*-stage'
+	# 	yellow '^gke_.*-stage-'
+	# 	red '^[^(]*-(prod|internal|corp)'
+	# 	red '^gke_.*-corp-'
+	# 	red '^gke_.*-prod-'
+	# )
 
 	export GOPROXY=artifactory.squarespace.net/api/go/go
 	export GOPRIVATE=*.squarespace.net
@@ -41,9 +42,9 @@ if [[ -d $HOME/squarespace ]]; then
 
 	# virtualenvwrapper
 	# TODO move this to the python stow?
-	if [[ -f /usr/local/bin/virtualenvwrapper.sh ]]; then
-		export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
-		export WORKON_HOME=~/python/
-		source /usr/local/bin/virtualenvwrapper_lazy.sh
-	fi
+	# if [[ -f /usr/local/bin/virtualenvwrapper.sh ]]; then
+	# 	export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+	# 	export WORKON_HOME=~/python/
+	# 	source /usr/local/bin/virtualenvwrapper_lazy.sh
+	# fi
 fi

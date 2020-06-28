@@ -1,10 +1,2 @@
 antigen bundle github
 antigen bundle gitfast
-
-export SPACESHIP_GIT_PREFIX="‹"
-export SPACESHIP_GIT_SUFFIX="› "
-export SPACESHIP_GIT_BRANCH_PREFIX=""
-export SPACESHIP_GIT_BRANCH_SUFFIX=""
-export SPACESHIP_GIT_BRANCH_COLOR=blue
-export SPACESHIP_GIT_STATUS_PREFIX=""
-export SPACESHIP_GIT_STATUS_SUFFIX=""

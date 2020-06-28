@@ -1,9 +1,6 @@
 antigen bundle kubectl
 
-SPACESHIP_PROMPT_KITCHEN_MODULES+=kubectl_context
-export SPACESHIP_KUBECONTEXT_COLOR_GROUPS=(
-	green 'minikube'
-)
-export SPACESHIP_KUBECONTEXT_PREFIX=" :: "
-export SPACESHIP_KUBECONTEXT_SYMBOL=""
-export SPACESHIP_KUBECONTEXT_PREFIX="kube: "
+# TODO is there a similar thing to SPACESHIP's kube context colors for p10k?
+# export SPACESHIP_KUBECONTEXT_COLOR_GROUPS=(
+# 	green 'minikube'
+# )
