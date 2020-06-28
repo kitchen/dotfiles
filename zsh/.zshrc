@@ -1,7 +1,7 @@
 source ~/.antigen/antigen.zsh
 
 antigen use oh-my-zsh
-antigen theme denysdovhan/spaceship-prompt
+#antigen theme denysdovhan/spaceship-prompt
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 eval "$(direnv hook zsh)"
@@ -31,3 +31,5 @@ export SPACESHIP_USER_SUFFIX=""
 export SPACESHIP_USER_PREFIX=""
 
 antigen apply
+
+eval "$(starship init zsh)"

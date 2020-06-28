@@ -18,6 +18,7 @@ stows=(
 	rust
 	squarespace
 	ssh
+	starship
 	terraform
 	thefuck
 	tmux
