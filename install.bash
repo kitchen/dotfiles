@@ -18,7 +18,6 @@ stows=(
 	rust
 	squarespace
 	ssh
-	starship
 	terraform
 	thefuck
 	tmux
@@ -32,5 +31,7 @@ if ! which stow > /dev/null; then
 fi
 
 git submodule init && git submodule update
+
+stow -D starship
 
 stow -R --ignore .gitkeep -v ${stows[@]}
