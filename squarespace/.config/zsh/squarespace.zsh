@@ -16,20 +16,15 @@ if [[ -d $HOME/squarespace ]]; then
 		fi
 	}
 
+	# TODO figure out how best to move the sqsp specific kubecontext classes back to here.
+	# TODO there's something similar for terraform workspaces too, but we don't use those (yet)
+	# POWERLEVEL9K_TERRAFORM_CLASSES is an array with even number of elements. The first element
 
-	# kubecontext colors
-	# TODO is there such a thing for p10k?
-	# SPACESHIP_KUBECONTEXT_COLOR_GROUPS+=(
-	# 	# the regex is on the entire 'context (namespace)' string, which is a bit of a sad, but that's ok
-	# 	green '^[^(]*-sandbox'
-	# 	green '^qa[-1-9]+'
-	# 	green '^gke_.*-dev-'
-	# 	yellow '^[^(]*-stage'
-	# 	yellow '^gke_.*-stage-'
-	# 	red '^[^(]*-(prod|internal|corp)'
-	# 	red '^gke_.*-corp-'
-	# 	red '^gke_.*-prod-'
-	# )
+	# TODO and for gcloud
+	# POWERLEVEL9K_GOOGLE_APP_CRED_CLASSES is an array with even number of elements. The first
+
+	# TODO and for aws
+	# POWERLEVEL9K_AWS_CLASSES is an array with even number of elements. The first element
 
 	export GOPROXY=artifactory.squarespace.net/api/go/go
 	export GOPRIVATE=*.squarespace.net

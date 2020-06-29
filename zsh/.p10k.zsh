@@ -1140,10 +1140,23 @@
   #   typeset -g POWERLEVEL9K_KUBECONTEXT_TEST_VISUAL_IDENTIFIER_EXPANSION='⭐'
   #   typeset -g POWERLEVEL9K_KUBECONTEXT_TEST_CONTENT_EXPANSION='> ${P9K_CONTENT} <'
   typeset -g POWERLEVEL9K_KUBECONTEXT_CLASSES=(
-      # '*prod*'  PROD    # These values are examples that are unlikely
-      # '*test*'  TEST    # to match your needs. Customize them as needed.
-      '*'       DEFAULT)
+    '*-sandbox'     DEV
+    'gke_*-dev-*'   DEV
+    'qa*'           QA
+    '*-stage'       STAGE
+    'gke_*-stage-*' STAGE
+    '*-prod'        PROD
+    '*-corp'        PROD
+    '*-internal'    PROD
+    'gke_*-corp-*'  PROD
+    'gke_*-prod-*'  PROD
+    '*'             DEFAULT)
   typeset -g POWERLEVEL9K_KUBECONTEXT_DEFAULT_FOREGROUND=134
+  typeset -g POWERLEVEL9K_KUBECONTEXT_DEV_FOREGROUND=green
+  typeset -g POWERLEVEL9K_KUBECONTEXT_QA_FOREGROUND=green
+  typeset -g POWERLEVEL9K_KUBECONTEXT_STAGE_FOREGROUND=yellow
+  typeset -g POWERLEVEL9K_KUBECONTEXT_PROD_FOREGROUND=red
+
   # typeset -g POWERLEVEL9K_KUBECONTEXT_DEFAULT_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
   # Use POWERLEVEL9K_KUBECONTEXT_CONTENT_EXPANSION to specify the content displayed by kubecontext
