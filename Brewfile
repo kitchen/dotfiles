@@ -14,7 +14,6 @@ brew 'pandoc'
 brew 'ripgrep'
 brew 'rustup-init'
 brew 'shellcheck'
-brew 'starship'
 brew 'stow'
 brew 'terraform'
 brew 'thefuck'
@@ -23,3 +22,5 @@ brew 'vault'
 
 tap 'd12frosted/emacs-plus'
 brew 'emacs-plus'
+
+cask 'google-cloud-sdk'
