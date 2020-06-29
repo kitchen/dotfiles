@@ -32,6 +32,4 @@ fi
 
 git submodule init && git submodule update
 
-stow -D starship
-
 stow -R --ignore .gitkeep -v ${stows[@]}
