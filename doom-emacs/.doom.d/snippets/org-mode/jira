@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: jira
+# uuid: B3162CF1-8D01-4596-997E-CA4D0430C503
+# key: jira
+# condition: t
+# --
+
+[[https://jira.squarespace.net/browse/$1][$1]]
