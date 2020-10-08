@@ -86,11 +86,6 @@
            (unless (string= "-" project-name)
              (format (if (buffer-modified-p)  " ◉ %s" "  ●  %s") project-name))))))
 
-;; this makes it so BOL/OEL movements in vim respect visual line mode.
-(setq evil-respect-visual-line-mode t)
-(add-hook! '(prog-mode-hook text-mode-hook conf-mode-hook)
-           #'turn-on-visual-line-mode)
-
 ;; avy-dvorak :grin:
 ;; avy tutorial thing: https://www.youtube.com/watch?v=zar4GsOBU0g
 (setq avy-keys '(?a ?o ?e ?u ?h ?t ?n ?s))
