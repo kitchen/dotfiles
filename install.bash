@@ -11,6 +11,7 @@ stows=(
 	gpg
 	hg
 	kubernetes
+	lsd
 	osx
 	python
 	rg
