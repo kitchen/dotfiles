@@ -103,6 +103,7 @@
 
        :os
        (:if IS-MAC macos)
+       (tty +osc)
 
        :lang
        ;;agda              ; types of types of types of types...

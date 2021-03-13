@@ -48,4 +48,3 @@
 
 (package! load-directory)
 (package! protobuf-mode)
-(package! clipetty :disable t)
