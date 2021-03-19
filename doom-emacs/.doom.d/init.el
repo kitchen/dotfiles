@@ -103,7 +103,7 @@
 
        :os
        (:if IS-MAC macos)
-       (tty +osc)
+       (tty) ;; +osc is disabled until I can figure out how to get it working with mosh
 
        :lang
        ;;agda              ; types of types of types of types...
