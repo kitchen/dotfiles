@@ -48,3 +48,4 @@
 
 (package! load-directory)
 (package! protobuf-mode)
+(package! dts-mode)

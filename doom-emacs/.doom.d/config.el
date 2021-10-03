@@ -145,3 +145,10 @@
              '("ansible/host_vars/.*" . yaml-mode))
 (add-to-list 'auto-mode-alist
              '("ansible/inventory\.*" . conf-mode))
+(add-to-list 'auto-mode-alist
+             '(".*\.keymap" . dts-mode))
+(add-to-list 'auto-mode-alist
+             '(".*\.overlay" . dts-mode))
+
+
+(setq magit-diff-refine-hunk 'all)
