@@ -17,7 +17,6 @@ stows=(
 	rg
 	ruby
 	rust
-	squarespace
 	ssh
 	terraform
 	thefuck
