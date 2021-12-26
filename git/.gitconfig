@@ -12,3 +12,5 @@
 
 [include]
 	path = ~/.config/git/squarespace.config
+[core]
+	excludesfile = /Users/kitchen/.config/git/ignore
