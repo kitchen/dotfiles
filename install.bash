@@ -10,7 +10,6 @@ stows=(
 	golang
 	gpg
 	hg
-	kakoune
 	kubernetes
 	lsd
 	osx
