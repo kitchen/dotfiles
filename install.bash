@@ -9,6 +9,7 @@ stows=(
 	git
 	golang
 	gpg
+	helix
 	hg
 	kubernetes
 	lsd
