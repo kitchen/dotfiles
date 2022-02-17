@@ -1,3 +1,2 @@
 [keys.normal]
 C-s = ":w"
-G = "goto_last_line"
