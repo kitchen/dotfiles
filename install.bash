@@ -14,7 +14,6 @@ stows=(
 	kubernetes
 	lsd
 	osx
-	python
 	rg
 	ruby
 	rust
@@ -25,6 +24,10 @@ stows=(
 	zsh
 )
 
+stows_to_delete=(
+	python
+)
+
 if ! which stow > /dev/null; then
 	echo "stow required, please install"
 	echo '`brew install stow` or `sudo apt install stow`'
@@ -33,4 +36,18 @@ fi
 
 git submodule init && git submodule update
 
-stow -R --ignore .gitkeep -v ${stows[@]}
+echo installing stows
+stow -R ${stows[@]}
+
+echo pruning old stows
+stow -D ${stows_to_delete[@]}
+
+for stow in stows; do
+	if [[ -f "${stow}/post-install-hook" ]]; then
+		echo "found post-install-hook for ${stow}, running"
+		(
+			cd "${stow}"
+			. post-install-hook
+		)
+	fi
+done

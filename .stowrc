@@ -1,0 +1,5 @@
+--ignore README\.*
+--ignore post-install-hook
+--ignore \.gitkeep
+--dotfiles
+-v
