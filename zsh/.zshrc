@@ -81,6 +81,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 for zshrc in ~/.config/zsh/*.zsh; do
 	source $zshrc
 done
+plugins+=(zsh-syntax-highlighting)
 
 
 source $ZSH/oh-my-zsh.sh
