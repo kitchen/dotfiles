@@ -28,6 +28,8 @@ stows_to_delete=(
 	python
 )
 
+export PATH=$PATH:/opt/homebrew/bin
+
 if ! which stow > /dev/null; then
 	echo "stow required, please install"
 	echo '`brew install stow` or `sudo apt install stow`'
