@@ -1,1 +1,1 @@
-antigen bundle tmuxinator
+plugins+=(tmuxinator)

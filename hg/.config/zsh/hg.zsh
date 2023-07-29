@@ -1,1 +1,1 @@
-antigen bundle mercurial
+plugins+=(mercurial)

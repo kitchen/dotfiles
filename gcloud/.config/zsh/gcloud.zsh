@@ -1,3 +1,3 @@
-antigen bundle gcloud
+plugins+=(gcloud)
 
 alias gcp=gcloud

@@ -1,2 +1,1 @@
-antigen bundle github
-antigen bundle gitfast
+plugins+=(github gitfast)

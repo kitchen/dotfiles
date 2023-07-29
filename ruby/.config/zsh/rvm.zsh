@@ -1,1 +1,1 @@
-antigen bundle unixorn/rvm-plugin
+# TODO: rvm

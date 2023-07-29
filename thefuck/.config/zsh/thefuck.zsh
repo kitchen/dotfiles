@@ -1,1 +1,1 @@
-antigen bundle thefuck
+plugins+=(thefuck)

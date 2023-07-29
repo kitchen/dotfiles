@@ -1,2 +1,2 @@
-antigen bundle fzf
+plugins+=(fzf)
 

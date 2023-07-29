@@ -1,1 +1,2 @@
-antigen bundle autojump
+#antigen bundle autojump
+plugins+=("autojump")

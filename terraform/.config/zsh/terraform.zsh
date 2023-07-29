@@ -1,2 +1,2 @@
-antigen bundle terraform
+plugins+=(terraform)
 
