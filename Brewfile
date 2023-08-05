@@ -22,8 +22,8 @@ brew 'thefuck'
 brew 'tmux'
 brew 'vault'
 
-tap 'd12frosted/emacs-plus'
-brew 'emacs-plus'
+# tap 'd12frosted/emacs-plus'
+# brew 'emacs-plus'
 
 cask 'google-cloud-sdk'
 
