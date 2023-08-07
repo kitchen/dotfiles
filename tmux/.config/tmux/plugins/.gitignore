@@ -1,0 +1,4 @@
+# this directory is managed by tpm
+*
+!.gitignore
+!tpm
