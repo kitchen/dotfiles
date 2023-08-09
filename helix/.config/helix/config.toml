@@ -1,2 +1,5 @@
 [keys.normal]
 C-s = ":w"
+
+[editor.file-picker]
+hidden = false
