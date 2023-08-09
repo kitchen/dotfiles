@@ -1,4 +1,0 @@
-# pretty sure this is just a temp file, but it keeps popping up when I go to commit my git files
-# flycheck_*.el would probably catch more, and maybe I'll promote this to that at some point
-# but for now, flycheck_config catches the 90% use cases
-flycheck_config.el

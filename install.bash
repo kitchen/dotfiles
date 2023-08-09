@@ -3,7 +3,6 @@ stows=(
 	autojump
 	aws
 	bash
-	doom-emacs
 	fzf
 	gcloud
 	git
@@ -25,6 +24,7 @@ stows=(
 )
 
 stows_to_delete=(
+  doom-emacs
 	python
 )
 
