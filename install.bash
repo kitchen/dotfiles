@@ -8,10 +8,10 @@ stows=(
 	git
 	golang
 	gpg
-	helix
 	hg
 	kubernetes
 	lsd
+	nvim
 	osx
 	rg
 	ruby
@@ -24,13 +24,14 @@ stows=(
 )
 
 stows_to_delete=(
-  doom-emacs
+	doom-emacs
+	helix
 	python
 )
 
 export PATH=$PATH:/opt/homebrew/bin
 
-if ! which stow > /dev/null; then
+if ! which stow >/dev/null; then
 	echo "stow required, please install"
 	echo '`brew install stow` or `sudo apt install stow`'
 	exit 2
