@@ -1,5 +1,4 @@
 stows=(
-	24bit
 	autojump
 	aws
 	bash
