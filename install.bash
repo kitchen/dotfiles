@@ -2,6 +2,7 @@ stows=(
 	autojump
 	aws
 	bash
+	fdfind
 	fzf
 	gcloud
 	git
@@ -23,9 +24,6 @@ stows=(
 )
 
 stows_to_delete=(
-	doom-emacs
-	helix
-	python
 )
 
 export PATH=$PATH:/opt/homebrew/bin
@@ -40,9 +38,6 @@ git submodule init && git submodule update
 
 echo installing stows
 stow -R ${stows[@]}
-
-echo pruning old stows
-stow -D ${stows_to_delete[@]}
 
 for stow in stows; do
 	if [[ -f "${stow}/post-install-hook" ]]; then
