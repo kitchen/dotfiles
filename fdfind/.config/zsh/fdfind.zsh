@@ -1,5 +1,5 @@
 # on ubuntu this is "fdfind", from homebrew and in my brain it's just "fd"
-if type nvim >/dev/null 2>&1 ; then
+if (( $+commands[fdfind] )); then
   alias fd=fdfind
 fi
 
