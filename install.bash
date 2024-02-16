@@ -1,5 +1,4 @@
 stows=(
-	autojump
 	aws
 	bash
 	fdfind
@@ -20,6 +19,7 @@ stows=(
 	terraform
 	thefuck
 	tmux
+	zoxide
 	zsh
 )
 
