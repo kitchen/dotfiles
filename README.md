@@ -1,3 +1,9 @@
+# superceded
+
+This repo has been superceded by my new [chezmoi](https://www.chezmoi.io/) powered [dotfiles repo](https://github.com/kitchen/chezmoi-dotfiles)
+
+# old stuff
+.
 kitchen's dotfiles
 
 I'm now using [`stow`](https://www.gnu.org/software/stow/) to manage my dotfiles. Or at least trying to. This is an experiment. So far I really only have 3 things I have my dotfiles on anymore and they all support `stow`, so that's good.
